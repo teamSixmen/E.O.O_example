@@ -14,9 +14,9 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) 
             setChange(!change);
             // console.log(selectedItems);
         } else {
-            if (selectedItems.length < 3) {
+            if (selectedItems.length < 6) {
                 // console.log("add");
-                const changedItems = [...selectedItems, 
+                const changedItems = [...selectedItems,
                     {"menuCode": item.menuCode, 
                      "menuName": item.menuName, 
                      "price": item.price,
