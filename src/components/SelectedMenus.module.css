@@ -34,8 +34,8 @@
 
 .FrontText {
     display: inline-block;
-    position: absolute;
-    left: 570px;
+    /* position: absolute; */
+    margin-right: 50px;
 }
 
 .NextText {

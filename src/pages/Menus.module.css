@@ -1,8 +1,50 @@
+.allBox {
+    width: 768px;
+    height: 548px;
+    display: flex;
+}
+
 .Box {
     width: 665px;
-    height: 475px;
-    position: absolute;
-    top: 439px;
-    left: 103px;
+    height: 476px;
+    /* position: absolute; */
+    /* top: 439px; */
+    /* left: 103px; */
     background-color: rgba(243, 236, 236, 1);
+    margin-top: -485px;
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.pagenation {
+    width: 654px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pagebutton {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttonActive {
+    
+    margin-right: 5px;
+    border: 1px double #ccc;
+    border-radius: 50px;
+    background-color: #ffb800;
+    color: #ffb800;
+    cursor: pointer;
+}
+

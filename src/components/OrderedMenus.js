@@ -4,7 +4,7 @@ function OrderedMenus({item}) {
 
     return (
         <>
-            <div>
+            <div className={style.ReceiptBox}>
                 <p className={style.ReceiptTextName}>{item.menuName}</p>
                 <p className={style.ReceiptTextPrice}>{parseInt(item.price / 1000)},{(item.price % 1000)? item.price % 1000:"000"}</p>
                 <p className={style.ReceiptTextQuantity}>{item.quantity}</p>

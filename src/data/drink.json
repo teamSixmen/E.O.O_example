@@ -69,5 +69,53 @@
             "description" : "맘스터치만의 스페셜 로스팅 원두를 사용해 부드러운 맛과 커피 본연의 풍미를 살린 아메리카노",
             "image" : "아메리카노.png"
         }
+    },
+    
+    { 
+        "menuCode" : 507,
+        "menuName" : "아이스 아메리카노",
+        "categoryName" : "drink",
+        "isOrderable" : true,
+        "price" : 2000,
+        "detail" : {
+            "description" : "맘스터치만의 스페셜 로스팅 원두를 사용해 부드러운 맛과 커피 본연의 풍미를 살린 아메리카노",
+            "image" : "아이스아메리카노.png"
+        }
+    },
+    
+    { 
+        "menuCode" : 508,
+        "menuName" : "레몬에이드",
+        "categoryName" : "drink",
+        "isOrderable" : true,
+        "price" : 2500,
+        "detail" : {
+            "description" : "착즙 방식으로 레몬셀이 살아있어 풍부한 레몬의 맛과 청량감을 느낄 수 있는 레몬에이드",
+            "image" : "레몬에이드.png"
+        }
+    },
+    
+    { 
+        "menuCode" : 509,
+        "menuName" : "청포도에이드",
+        "categoryName" : "drink",
+        "isOrderable" : true,
+        "price" : 2500,
+        "detail" : {
+            "description" : "청포도알맹이가 쏙쏙~ 상큼한 청포도에이드",
+            "image" : "청포도에이드.png"
+        }
+    },
+    
+    { 
+        "menuCode" : 510,
+        "menuName" : "오렌지 주스",
+        "categoryName" : "drink",
+        "isOrderable" : true,
+        "price" : 2500,
+        "detail" : {
+            "description" : "오렌지과즙이 풍부한 상큼한 오렌지 주스",
+            "image" : "오렌지주스.png"
+        }
     }
 ]

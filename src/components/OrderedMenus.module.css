@@ -1,25 +1,33 @@
+.ReceiptBox {
+    display: flex;
+
+}
+
 .ReceiptTextName {
-    display: inline-block;
     position: absolute;
-    left: 185px;
+    /* left: 185px; */
+    margin-left: 20px;
 }
 
 .ReceiptTextPrice {
     display: inline-block;
-    position: absolute;
-    left: 415px;
+    position: relative;
+    left: 230px;
+
 }
 
 .ReceiptTextQuantity {
     display: inline-block;
-    position: absolute;
-    left: 500px;
+    position: relative;
+    left: 245px;
+    margin-left: 30px;
 }
 
 .ReceiptTextSum {
     display: inline-block;
-    position: absolute;
-    left: 535px;
+    position: relative;
+    left: 260px;
+    margin-left: 30px;
 }
 
 .ReceiptTextBlank {

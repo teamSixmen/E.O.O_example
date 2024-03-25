@@ -64,5 +64,49 @@
             "description" : "케이준스타일의 바삭한 양념감자 맘스터치의 베스트 사이드 메뉴!",
             "image" : "케이준양념감.png"
         }
+    },
+    { 
+        "menuCode" : 407,
+        "menuName" : "치즈스틱",
+        "categoryName" : "side",
+        "isOrderable" : true,
+        "price" : 2200,
+        "detail" : {
+            "description" : "고단백 영양 만점의 모짜렐라 치즈스틱",
+            "image" : "치즈스틱.png"
+        }
+    },
+    { 
+        "menuCode" : 408,
+        "menuName" : "코우슬로",
+        "categoryName" : "side",
+        "isOrderable" : true,
+        "price" : 2200,
+        "detail" : {
+            "description" : "입맛을 돋우는 양배추의 아삭한 식감과 상큼한 맛의 코울슬로",
+            "image" : "코우슬로.png"
+        }
+    },
+    { 
+        "menuCode" : 409,
+        "menuName" : "콘샐러드",
+        "categoryName" : "side",
+        "isOrderable" : true,
+        "price" : 1900,
+        "detail" : {
+            "description" : "달콤한 스위트콘에 신선한 야채가 어우러진 콘샐러드! 치킨 버거와 곁들여 먹기 좋습니다.",
+            "image" : "콘샐러드.png"
+        }
+    },
+    { 
+        "menuCode" : 410,
+        "menuName" : "할라피뇨 너겟",
+        "categoryName" : "side",
+        "isOrderable" : true,
+        "price" : 3800,
+        "detail" : {
+            "description" : "콕콕 박힌 할라피뇨로 매콤하게 즐기는 할라피뇨 너겟",
+            "image" : "할라피뇨너겟.png"
+        }
     }
 ]
