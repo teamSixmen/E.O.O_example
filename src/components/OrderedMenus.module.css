@@ -1,0 +1,27 @@
+.ReceiptTextName {
+    display: inline-block;
+    position: absolute;
+    left: 185px;
+}
+
+.ReceiptTextPrice {
+    display: inline-block;
+    position: absolute;
+    left: 415px;
+}
+
+.ReceiptTextQuantity {
+    display: inline-block;
+    position: absolute;
+    left: 500px;
+}
+
+.ReceiptTextSum {
+    display: inline-block;
+    position: absolute;
+    left: 535px;
+}
+
+.ReceiptTextBlank {
+    display: inline-block;
+}

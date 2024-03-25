@@ -1,0 +1,44 @@
+.SelectedMenusBox {
+    width: 768px;
+    height: 255px;
+    background-color: rgba(243, 236, 236, 1);
+}
+
+.TopBox {
+    width: 768px;
+    height: 35px;
+    background-color: rgba(58, 1, 0, 1);
+}
+
+.Selected {
+    width: 768px;
+    height: 210px;
+    justify-content: center;
+}
+
+.Display {
+    width: 670px;
+    margin-top: 5px;
+    margin-left: 45px;
+}
+
+.BottomBox {
+    width: 768px;
+    height: 45px;
+    background-color: rgba(58, 1, 0, 1);
+    color: white;
+    text-align: end;
+    font-size: 130%;
+    line-height: 5px;
+}
+
+.FrontText {
+    display: inline-block;
+    position: absolute;
+    left: 570px;
+}
+
+.NextText {
+    display: inline-block;
+    margin-right: 20px;
+}

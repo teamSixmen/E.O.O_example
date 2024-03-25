@@ -1,0 +1,19 @@
+.NavbarBox {
+    width: 85px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.NavBox {
+    width: 85px;
+    height: 95px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    line-height: 90px;
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+    cursor: pointer;
+}

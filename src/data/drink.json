@@ -1,0 +1,73 @@
+[
+    { 
+        "menuCode" : 501,
+        "menuName" : "콜라",
+        "categoryName" : "drink",
+        "isOrderable" : true,
+        "price" : 1600,
+        "detail" : {
+            "description" : "가슴까지 시원한 콜라 한 잔! 효정's Touch 메뉴와 함께하세요!",
+            "image" : "콜라.png"
+        }
+    },
+    
+    { 
+        "menuCode" : 502,
+        "menuName" : "제로콜라",
+        "categoryName" : "drink",
+        "isOrderable" : true,
+        "price" : 1600,
+        "detail" : {
+            "description" : "가슴까지 시원한 제로콜라 한 잔! 효정's Touch 메뉴와 함께하세요!",
+            "image" : "콜라.png"
+        }
+    },
+    
+    { 
+        "menuCode" : 503,
+        "menuName" : "미린다",
+        "categoryName" : "drink",
+        "isOrderable" : true,
+        "price" : 1500,
+        "detail" : {
+            "description" : "새콤달콤한 미린다 효정's Touch 메뉴와 함께하세요!",
+            "image" : "미린다.png"
+        }
+    },
+    
+    { 
+        "menuCode" : 504,
+        "menuName" : "사이다",
+        "categoryName" : "drink",
+        "isOrderable" : true,
+        "price" : 1500,
+        "detail" : {
+            "description" : "톡 쏘는 사이다 한잔 효정's Touch 메뉴와 함께하세요!",
+            "image" : "사이다.png"
+        }
+    },
+    
+    { 
+        "menuCode" : 505,
+        "menuName" : "마운틴듀",
+        "categoryName" : "drink",
+        "isOrderable" : true,
+        "price" : 1600,
+        "detail" : {
+            "description" : "네온의 짜릿함 마운틴듀 효정's Touch 메뉴와 함께하세요!",
+            "image" : "마운틴듀.png"
+        }
+    },
+    
+    { 
+        "menuCode" : 506,
+        "menuName" : "아메리카노",
+        "categoryName" : "drink",
+        "isOrderable" : true,
+        "price" : 2000,
+        "detail" : {
+            "description" : "맘스터치만의 스페셜 로스팅 원두를 사용해 부드러운 맛과 커피 본연의 풍미를 살린 아메리카노",
+            "image" : "아메리카노.png"
+        }
+    }
+]

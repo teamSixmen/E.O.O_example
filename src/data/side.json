@@ -1,0 +1,68 @@
+[
+    { 
+        "menuCode" : 401,
+        "menuName" : "갈릭김떡만",
+        "categoryName" : "side",
+        "isOrderable" : true,
+        "price" : 3900,
+        "detail" : {
+            "description" : "바삭한 김말이 쫄깃한 떡 강정과 팝콘만두를 갈릭 소스에 버무려 맵지 않게 즐기는 갈릭김떡만",
+            "image" : "갈릭김떡만.png"
+        }
+    },
+    { 
+        "menuCode" : 402,
+        "menuName" : "꿀꽈배기크림치즈",
+        "categoryName" : "side",
+        "isOrderable" : true,
+        "price" : 2900,
+        "detail" : {
+            "description" : "꿀꽈배기 꿀과 꽈배기가 만났다! 부드러운 크림치즈와 꿀꽈배기의 아카시아꿀로 더욱 부드러워진 꽈배기 스낵",
+            "image" : "꿀꽈배기크림치즈.png"
+        }
+    },
+    { 
+        "menuCode" : 403,
+        "menuName" : "매콤김떡만",
+        "categoryName" : "side",
+        "isOrderable" : true,
+        "price" : 4100,
+        "detail" : {
+            "description" : "바삭한 김말이 쫄깃한 떡 강정과 팝콘만두를 매콤한 소스에 맛있게 버무린 매콤김떡만",
+            "image" : "매콤김떡만.png"
+        }
+    },
+    { 
+        "menuCode" : 404,
+        "menuName" : "바삭크림치즈볼",
+        "categoryName" : "side",
+        "isOrderable" : true,
+        "price" : 3500,
+        "detail" : {
+            "description" : "달콤한 치즈의 풍미를 바삭하고 쫀득하게 즐기는 치즈볼 ",
+            "image" : "바삭크림치즈볼.png"
+        }
+    },
+    { 
+        "menuCode" : 405,
+        "menuName" : "치즈뿌치감자",
+        "categoryName" : "side",
+        "isOrderable" : true,
+        "price" : 4100,
+        "detail" : {
+            "description" : "치즈감자에 향긋한 치즈 시즈닝을 뿌려먹는 치즈뿌치감자",
+            "image" : "치즈뿌치감자.png"
+        }
+    },
+    { 
+        "menuCode" : 406,
+        "menuName" : "케이준양념감자",
+        "categoryName" : "side",
+        "isOrderable" : true,
+        "price" : 1700,
+        "detail" : {
+            "description" : "케이준스타일의 바삭한 양념감자 맘스터치의 베스트 사이드 메뉴!",
+            "image" : "케이준양념감.png"
+        }
+    }
+]

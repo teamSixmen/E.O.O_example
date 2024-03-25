@@ -1,0 +1,22 @@
+.FooterBox {
+    width: 768px;
+    height: 80px;
+    background-color: rgba(58, 1, 0, 1);
+    display: flex;
+}
+
+.CallBox {
+    width: 70px;
+    height: 60px;
+    background-color: rgba(14, 200, 66, 1);
+    line-height: 30px;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Icon {
+    overflow: hidden;
+}

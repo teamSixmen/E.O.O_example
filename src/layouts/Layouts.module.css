@@ -1,0 +1,11 @@
+.MenuInner {
+    width: 768px;
+    height: 480px;
+}
+
+.Back {
+    border: 1px solid black;
+    background-color: rgba(241, 241, 241, 1);
+    width: 768px;
+    height: 810px;
+}

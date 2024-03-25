@@ -1,0 +1,68 @@
+[
+    { 
+        "menuCode" : 201,
+        "menuName" : "간장마늘 싸이순살",
+        "categoryName" : "치킨",
+        "isOrderable" : true,
+        "price" : 12000,
+        "detail" : {
+            "description" : "알싸한 마늘 향의 매콤함, 특제 간장소스의 단짠이 조화로운 닭다리살 순살치킨",
+            "image" : "간장마늘 싸이순살.png"
+        }
+       },
+    { 
+        "menuCode" : 202,
+        "menuName" : "꿀간장누룽지 싸이순살",
+        "categoryName" : "치킨",
+        "isOrderable" : true,
+        "price" : 16900,
+        "detail" : {
+            "description" : "단짠바삭의 정석! 꿀간장 소스와 크런치한 누룽지가 만나 단짠과 바삭함을 함께 즐기는 치킨!",
+            "image" : "꿀간장누룽지 싸이순살.png"
+        }
+       },
+    { 
+        "menuCode" : 203,
+        "menuName" : "닭강정트리오",
+        "categoryName" : "치킨",
+        "isOrderable" : true,
+        "price" : 14900,
+        "detail" : {
+            "description" : "맛있는 닭다리살과 쫀득한 쌀떡케이준떡강정S 치파오떡강정S 간장마늘떡강정S으로 구성된 닭강정세트!",
+            "image" : "닭강정트리오.png"
+        }
+       },
+    { 
+        "menuCode" : 204,
+        "menuName" : "반반치킨",
+        "categoryName" : "치킨",
+        "isOrderable" : true,
+        "price" : 16900,
+        "detail" : {
+            "description" : "후라이드와 양념소스 2가지 맛을 한 번에! 골라먹는 재미가 있는 반반치킨",
+            "image" : "반반치킨.png"
+        }
+       },
+    { 
+        "menuCode" : 205,
+        "menuName" : "치즈뿌치(체다)",
+        "categoryName" : "치킨",
+        "isOrderable" : true,
+        "price" : 17900,
+        "detail" : {
+            "description" : "색다른 체다치즈 시즈닝의 치킨! 체다치즈 고소함과 짭잘한 시즈닝이 중독적인 치킨",
+            "image" : "치즈뿌치(체다).png"
+        }
+       },
+    { 
+        "menuCode" : 206,
+        "menuName" : "치파오싸이순살",
+        "categoryName" : "치킨",
+        "isOrderable" : true,
+        "price" : 17300,
+        "detail" : {
+            "description" : "라유에 볶아 은은한 파향, 흑임자와 매콤달콤한 중화풍 사천식 소스를 담은 닭다리살 순살치킨",
+            "image" : "치파오싸이순살.png"
+        }
+    }
+    ]

@@ -1,0 +1,66 @@
+.Back {
+    background-color: rgba(241, 241, 241, 1);
+    width: 768px;
+    height: 810px;
+    text-align: center;
+}
+
+.CardBlank {
+    width: 10px;
+    height: 140px;
+}
+
+.AppBlank {
+    width: 10px;
+    height: 140px;
+}
+
+.Blank {
+    height: 50px;
+}
+
+.Receipt {
+    border: 1px solid black;
+    width: 450px;
+    background-color: white;
+    margin-left: 159px;
+    cursor: pointer;
+}
+
+.ReceiptTextName {
+    display: inline-block;
+    position: absolute;
+    left: 265px;
+}
+
+.ReceiptTextPrice {
+    display: inline-block;
+    position: absolute;
+    left: 425px;
+}
+
+.ReceiptTextQuantity {
+    display: inline-block;
+    position: absolute;
+    left: 490px;
+}
+
+.ReceiptTextSum {
+    display: inline-block;
+    position: absolute;
+    left: 555px;
+}
+
+.ReceiptTextBlank {
+    display: inline-block;
+}
+
+.Home {
+    width: 320px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: rgba(226, 215, 215, 1);
+    line-height: 85px;
+    margin-left: 65px;
+    margin-bottom: 30px;;
+}

@@ -1,0 +1,70 @@
+[
+    { 
+     "menuCode" : 101,
+     "menuName" : "골드맥앤치즈 치킨버거",
+     "categoryName" : "버거",
+     "isOrderable" : true,
+     "price" : 5800,
+     "detail" : {
+         "description" : "풍미 가득 순쇠고기 패티와 진한 골드맥앤치즈, 매콤한 치폴레소스까지!",
+         "image" : "골드맥앤치즈 치킨버거.png"
+     }
+ 
+    },
+    { 
+     "menuCode" : 102,
+     "menuName" : "불싸이버거",
+     "categoryName" : "버거",
+     "isOrderable" : true,
+     "price" : 5100,
+     "detail" : {
+         "description" : "화끈한 불맛이 살아있는 버거,싸이버거의 매운맛 버전!!",
+         "image" : "불싸이버거.png"
+     }
+     },
+    { 
+     "menuCode" : 103,
+     "menuName" : "비프스테이크 버거",
+     "categoryName" : "버거",
+     "isOrderable" : true,
+     "price" : 5100,
+     "detail" : {
+         "description" : "육즙 풍부한 패티와 달콤한 스테이크소스의 조화! 두툼한 육즙 가득 비프패티와 여러가지 토핑 스테이크소스의 환상적인 만남!",
+         "image" : "비프스테이크버거.png"
+     }
+     },
+    { 
+     "menuCode" : 104,
+     "menuName" : "쉬림프 싸이플렉스 버거",
+     "categoryName" : "버거",
+     "isOrderable" : true,
+     "price" : 5400,
+     "detail" : {
+         "description" : "BEST 통새우버거와 싸이버거의 결합! 타르타르소스까지 더한 새로운 입찢버거로 FLEX!",
+         "image" : "쉬림프싸이플렉스버거.png"
+     }
+     },
+    { 
+     "menuCode" : 105,
+     "menuName" : "싸이버거",
+     "categoryName" : "버거",
+     "isOrderable" : true,
+     "price" : 5000,
+     "detail" : {
+         "description" : "바삭하고 매콤한 치킨 패티와 신선한 양상추가 조화를 이루는 효정's터치 시그니처 버거.",
+         "image" : "싸이버거.png"
+     }
+     },
+    { 
+     "menuCode" : 106,
+     "menuName" : "아라비아따치즈버거",
+     "categoryName" : "버거",
+     "isOrderable" : true,
+     "price" : 5600,
+     "detail" : {
+         "description" : "고소한 통모짜렐라 치즈패티 & 부드러운 통닭다리살 & 매콤한 아라비아따소스가 선보이는 환상적인 조화!풍성한 속재료와 풍미 가득한 토마토 칠리소스가 만든 중독적인 맛을 느낄 수 있는 버거!! ",
+         
+         "image" : "아라비아따치즈버거.png"
+     }
+     }
+    ]
