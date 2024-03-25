@@ -1,10 +1,8 @@
 .Box {
     width: 665px;
-    height: 475px;
+    height: 476px;
     /* position: absolute; */
-    margin-top: -485px;
-    margin-left: 80px;
-    top: 439px;
-    left: 103px;
+    /* top: 439px; */
+    /* left: 103px; */
     background-color: rgba(243, 236, 236, 1);
 }
