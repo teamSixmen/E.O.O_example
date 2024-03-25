@@ -120,9 +120,14 @@ function App() {
               setWaitingNum={setWaitingNum}
             />}/>
           </Route>
-          <Route path="help" element={<Help
-            setSelectedItems={setSelectedItems}
+          <Route path='help' element={<StandardLayout
+            here={here}
+            setHere={setHere}
           />}>
+              <Route index element={<Help
+                setSelectedItems={setSelectedItems}
+              />}>
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
