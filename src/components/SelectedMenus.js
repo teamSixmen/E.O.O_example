@@ -70,10 +70,10 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
                         <SelectedMenusButton selectedItems={selectedItems} isTrue={isTrue}/>
                     </div>
                 </div>
-                <div className={style.BottomBox}>
-                    <p className={style.FrontText}>내실 돈 : </p>
-                    <p className={style.NextText}>{totalPrice? `${parseInt(totalPrice / 1000)},`:"" }{totalPrice? ((totalPrice % 1000)? totalPrice % 1000: "000"): "0"}원</p>
-                </div>
+            </div>
+            <div className={style.BottomBox}>
+                <p className={style.FrontText}>내실 돈 : </p>
+                <p className={style.NextText}>{totalPrice? `${parseInt(totalPrice / 1000)},`:"" }{totalPrice? ((totalPrice % 1000)? totalPrice % 1000: "000"): "0"}원</p>
             </div>
         </>
     );
