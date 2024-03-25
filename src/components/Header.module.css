@@ -1,39 +1,35 @@
 .TopBox {
     width: 768px;
-    height: 25px;
+    height: 26px;
     background-color: rgba(58, 1, 0, 1);
 }
 
 .HeaderBox {
-    height: 55px;
+    height: 92px;
     display: flex;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .logo {
-    object-fit: cover;
-    margin-top: 0px;
-    margin-left: 10px;
+    margin-right:150px;
 }
 
-.Blank {
-    width: 300px;
-}
+
 
 .HereBox {
-    width: 60px;
-    height: 50px;
-    border: 4px solid rgba(255, 184, 0, 1);
+    width: 70px;
+    height: 60px;
+    background: white;
+    border: 5px solid #ffb800;
     border-radius: 20px;
-    text-align: center;
-    display: inline-block;
-    margin-left: 20px;
-    margin-top: -2.5px;
-    line-height: 50px;
-    font-size: 120%;
+    font-size: 22px;
     font-weight: bold;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
 }
 
 .HomeBox {
@@ -46,11 +42,23 @@
     margin-left: 20px;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .Home {
-    width: 35px;
-    height: 35px;
+    border: none;
+}
+
+.Home img {
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: -12px;
+}
+
+
+.Home p {
+    font-size: 12px;
+    display: flex;
     justify-content: center;
-    display: inline-block;
+    text-align: center;
 }
