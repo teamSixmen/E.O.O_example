@@ -16,6 +16,8 @@ import AppCard from "./pages/AppCard";
 import Receipt from "./pages/Receipt";
 import Help from "./pages/Help";
 
+import style from './App.module.css';
+
 function App() {
 
   const [here, setHere] = useState(true);
@@ -25,6 +27,8 @@ function App() {
 
   return (
     <>
+    <div className={style.App}>
+      <div className={style.kiosk}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Start
@@ -122,6 +126,8 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      </div>
+      </div>
     </>
   );
 }
