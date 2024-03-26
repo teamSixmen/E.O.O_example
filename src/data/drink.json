@@ -73,7 +73,7 @@
     
     { 
         "menuCode" : 507,
-        "menuName" : "아이스 아메리카노",
+        "menuName" : "아이스아메리카노",
         "categoryName" : "drink",
         "isOrderable" : true,
         "price" : 2000,
