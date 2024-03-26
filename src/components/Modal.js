@@ -7,7 +7,7 @@ import { getDrinkMenus } from "../api/MenuAPI";
 
 import style from "./Modal.module.css";
 
-function Modal({ product, selectedItems, setSelectedItems, change, setChange, modalOpen, setModalOpen, modalBackground}) {
+function Modal({ product, selectedItems, setSelectedItems, change, setChange, modalOpen, setModalOpen, modalBackground, isDisplay, setIsDisplay}) {
 
     const [count, setCount] = useState(1);
     const [isSet, setIsSet] = useState(false);
@@ -35,6 +35,10 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
             setModalOpen(false);
         } else {
             setCount(count - 1);
+        }
+
+        if ( isDisplay ) {
+            setIsDisplay(!isDisplay);
         }
     };
     

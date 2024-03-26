@@ -6,7 +6,7 @@ import MenuBlock from "../components/MenuBlock";
 
 import style from "./Menus.module.css";
 
-function ChickenMenus({selectedItems, setSelectedItems, change, setChange}) {
+function ChickenMenus({selectedItems, setSelectedItems, change, setChange, isDisplay, setIsDisplay}) {
 
     const [chickenMenuList, setChickenMenuList] = useState([]);
     const [page, setPage] = useState(1);
@@ -51,6 +51,8 @@ function ChickenMenus({selectedItems, setSelectedItems, change, setChange}) {
                                 setSelectedItems={setSelectedItems}
                                 change={change}
                                 setChange={setChange}
+                                isDisplay={isDisplay}
+                                setIsDisplay={setIsDisplay}
                             />
                         
                 )}

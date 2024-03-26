@@ -24,6 +24,7 @@ function App() {
   const [selectedItems, setSelectedItems] = useState([]);
   const [change, setChange] = useState(false);
   const [waitingNum, setWaitingNum] = useState(1);
+  const [isDisplay,setIsDisplay] = useState(false); // 선택 메뉴 개수에 따라 노출되는 메뉴 변경 Boolean
 
   return (
     <>
@@ -44,42 +45,56 @@ function App() {
             setSelectedItems={setSelectedItems}
             change={change}
             setChange={setChange}
+            isDisplay={isDisplay}
+            setIsDisplay={setIsDisplay}
           />}>
             <Route index element={<BurgerMenus
               selectedItems={selectedItems}
               setSelectedItems={setSelectedItems}
               change={change}
               setChange={setChange}
+              isDisplay={isDisplay}
+              setIsDisplay={setIsDisplay}
             />}/>
             <Route path="burgermenu" element={<BurgerMenus
               selectedItems={selectedItems}
               setSelectedItems={setSelectedItems}
               change={change}
               setChange={setChange}
+              isDisplay={isDisplay}
+              setIsDisplay={setIsDisplay}
             />}/>
             <Route path="chickenmenu" element={<ChickenMenus
               selectedItems={selectedItems}
               setSelectedItems={setSelectedItems}
               change={change}
               setChange={setChange}
+              isDisplay={isDisplay}
+              setIsDisplay={setIsDisplay}
             />}/>
             <Route path="setmenu" element={<SetMenus
               selectedItems={selectedItems}
               setSelectedItems={setSelectedItems}
               change={change}
               setChange={setChange}
+              isDisplay={isDisplay}
+              setIsDisplay={setIsDisplay}
             />}/>
             <Route path="sidemenu" element={<SideMenus
               selectedItems={selectedItems}
               setSelectedItems={setSelectedItems}
               change={change}
               setChange={setChange}
+              isDisplay={isDisplay}
+              setIsDisplay={setIsDisplay}
             />}/>
             <Route path="drinkmenu" element={<DrinkMenus
               selectedItems={selectedItems}
               setSelectedItems={setSelectedItems}
               change={change}
               setChange={setChange}
+              isDisplay={isDisplay}
+              setIsDisplay={setIsDisplay}
             />}/>
           </Route>
           <Route path="order" element={<OrderLayout

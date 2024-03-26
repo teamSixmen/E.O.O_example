@@ -50,16 +50,13 @@
 
 .LeftButton {
     position: absolute;
-    top: 355px;
+    top: 380px;
     margin-left: 20px;
-}
-
-.LeftButtonStyle {
 }
 
 .RightButton{
     position: absolute;
-    top: 355px;
+    top: 380px;
     display: inline-block;
 }
 

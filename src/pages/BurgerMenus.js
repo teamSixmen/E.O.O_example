@@ -6,7 +6,7 @@ import MenuBlock from "../components/MenuBlock";
 
 import style from "./Menus.module.css";
 
-function BurgerMenus({selectedItems, setSelectedItems, change, setChange}) {
+function BurgerMenus({selectedItems, setSelectedItems, change, setChange, isDisplay, setIsDisplay}) {
 
     const [burgerMenuList, setBurgerMenuList] = useState([]);
     const [page, setPage] = useState(1);
@@ -51,6 +51,8 @@ function BurgerMenus({selectedItems, setSelectedItems, change, setChange}) {
                                 setSelectedItems={setSelectedItems}
                                 change={change}
                                 setChange={setChange}
+                                isDisplay={isDisplay}
+                                setIsDisplay={setIsDisplay}
                             />
                         
                 )}
