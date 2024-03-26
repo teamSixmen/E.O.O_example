@@ -22,6 +22,13 @@ function SelectedMenusButton({selectedItems, isTrue}){
     //     );
     // }
 
+    if(selectedItems.length < 1) {
+        return(
+            <>
+            </>
+        )
+    }
+
     return(
         <>
            <div className={style.SelectedButton}></div>

@@ -9,6 +9,11 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
     const [isTrue,setIsTrue] = useState(false);
     const [temp,setTemp] = useState([]);
 
+    const selectedMenusButtonStyle = {
+        visibility: selectedItems.length<4?'hidden':'visible',
+        cursor: selectedItems.length<4?'none':'pointer'
+    }
+
     let totalPrice = 0;
 
     selectedItems.map(
@@ -47,7 +52,7 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
                 <div className={style.Selected}>
                     <div className={style.TopBox}></div>
                     <div className={style.LeftButton}>
-                        <button onClick={onClickLeftButton} className={style.LeftButtonStyle}>좌</button>
+                        <img src="/images/왼쪽.png" onClick={onClickLeftButton} className={style.LeftButtonStyle} style={selectedMenusButtonStyle}/>
                     </div>
                     <div className={style.Display}>
                         {temp.map(
@@ -64,7 +69,7 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
                         )}
                     </div>
                     <div className={style.RightButton}>
-                        <button onClick={onClickRightButton} className={style.RightButtonStyle}>우</button>
+                        <img src="/images/오른쪽.png" onClick={onClickRightButton} className={style.RightButtonStyle} style={selectedMenusButtonStyle}/>
                     </div>
                     <div className={style.DisplayButton}>
                         <SelectedMenusButton selectedItems={selectedItems} isTrue={isTrue}/>
