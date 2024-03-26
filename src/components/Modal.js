@@ -55,7 +55,7 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
             setChange(!change);
             // console.log(selectedItems);
         } else {
-            if (selectedItems.length < 3) {
+            if (selectedItems.length < 6) {
                 // console.log("add");
                 if (!isSet) {
                 const changedItems = [...selectedItems, 
