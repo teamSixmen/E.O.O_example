@@ -22,7 +22,7 @@ function Selected({item, selectedItems, setSelectedItems, change, setChange }) {
             if (location.pathname.match("menu")) {
                 navigate(location.pathname);
             } else {
-                navigate("/menu/burgermenu");
+                !(selectedItems.length === 1)? console.log("hi!"):navigate("/menu/burgermenu");
             }
         } else {
             // console.log("minus");
