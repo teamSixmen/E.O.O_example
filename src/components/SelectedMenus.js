@@ -4,9 +4,8 @@ import Selected from "../components/Selected";
 import style from "./SelectedMenus.module.css";
 import SelectedMenusButton from "./SelectedMenusButton";
 
-function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
+function SelectedMenus({ selectedItems, setSelectedItems, change, setChange, isDisplay, setIsDisplay }) {
 
-    const [isTrue,setIsTrue] = useState(false);
     const [temp,setTemp] = useState([]);
 
     const selectedMenusButtonStyle = {
@@ -21,28 +20,30 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
             totalPrice += (item.price * item.quantity);
         }
     )
+    
+    let selectedTemp;
 
     const onClickLeftButton = () => {
-        const selectedTemp = selectedItems.slice(0,3);
-        setIsTrue(false);
+        setIsDisplay(false);
+        selectedTemp = selectedItems.slice(0,3);
         setTemp(selectedTemp);
     }
     
     const onClickRightButton = () => {
-        if( selectedItems.length > 3 ) {
-            const selectedTemp = selectedItems.slice(3,6);
-            setIsTrue(true);
-            setTemp(selectedTemp);
-        }
+        setIsDisplay(true);
+        selectedTemp = selectedItems.slice(3,6);
+        setTemp(selectedTemp);
     }
     
     useEffect(()=>{
-        if(!isTrue){
+        if(selectedItems.length<4){
             const selectedTemp = selectedItems.slice(0,3);
             setTemp(selectedTemp);
+            setIsDisplay(false);
         } else {
             const selectedTemp = selectedItems.slice(3,6);
             setTemp(selectedTemp);
+            setIsDisplay(true);
         }
     },[selectedItems])
 
@@ -64,7 +65,6 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
                                     setSelectedItems={setSelectedItems}
                                     change={change}
                                     setChange={setChange}
-                                    isTrue={isTrue}
                                 />
                         )}
                     </div>
@@ -72,7 +72,7 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
                         <img src="/images/오른쪽.png" onClick={onClickRightButton} className={style.RightButtonStyle} style={selectedMenusButtonStyle}/>
                     </div>
                     <div className={style.DisplayButton}>
-                        <SelectedMenusButton selectedItems={selectedItems} isTrue={isTrue}/>
+                        <SelectedMenusButton selectedItems={selectedItems} isDisplay={isDisplay}/>
                     </div>
                 </div>
             </div>

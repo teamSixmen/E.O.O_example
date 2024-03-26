@@ -1,13 +1,13 @@
 import { useState } from "react";
 import style from "./SelectedMenus.module.css";
 
-function SelectedMenusButton({selectedItems, isTrue}){
+function SelectedMenusButton({selectedItems, isDisplay}){
 
     if(selectedItems.length> 3){
         return(
             <>
-                <div className={!isTrue?style.SelectedButton:style.SelectedButton2}></div>
-                <div className={!isTrue?style.SelectedButton2:style.SelectedButton}></div>
+                <div className={!isDisplay?style.SelectedButton:style.SelectedButton2}></div>
+                <div className={!isDisplay?style.SelectedButton2:style.SelectedButton}></div>
             </>
         );
     }

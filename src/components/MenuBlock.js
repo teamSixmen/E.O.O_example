@@ -1,10 +1,10 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import Modal from "./Modal";
 
 import style from "./MenuBlock.module.css";
 
-function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) {
+function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange, isDisplay, setIsDisplay }) {
 
     const [modalOpen, setModalOpen] = useState(false);
     const modalBackground = useRef();
@@ -36,11 +36,26 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) 
     //         }
     //     }
     // };
+
+    const onClickHandler = () => {
+        setModalOpen(true);
+        if(selectedItems.length > 2) {
+            setIsDisplay(true);
+        } else {
+            setIsDisplay(false);
+        }
+    }
+
+    // useEffect(()=>{
+    //     if(selectedItems.length > 2) {
+    //         setIsDisplay(true);
+    //     } else setIsDisplay(false);
+    // },[])
         
     return (
-        <>
+        <>  
             <div
-                onClick={() => setModalOpen(true)}
+                onClick={onClickHandler}
                 className={style.Block}
             >
                 <br/><img src="/images/temp.jpg" width="100px"/>
@@ -56,6 +71,8 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) 
                 modalOpen={modalOpen}
                 setModalOpen={setModalOpen}
                 modalBackground={modalBackground}
+                isDisplay={isDisplay}
+                setIsDisplay={setIsDisplay}
             />
         </>
     );

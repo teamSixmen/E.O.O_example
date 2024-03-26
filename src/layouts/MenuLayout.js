@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 import style from "./Layouts.module.css";
 
-function MenuLayout({ here, setHere, selectedItems, setSelectedItems, change, setChange}) {
+function MenuLayout({ here, setHere, selectedItems, setSelectedItems, change, setChange, isDisplay, setIsDisplay}) {
 
     return (
         <>
@@ -22,6 +22,8 @@ function MenuLayout({ here, setHere, selectedItems, setSelectedItems, change, se
                 setSelectedItems={setSelectedItems}
                 change={change}
                 setChange={setChange}
+                isDisplay={isDisplay}
+                setIsDisplay={setIsDisplay}
             />
             <Order
                 selectedItems={selectedItems}
