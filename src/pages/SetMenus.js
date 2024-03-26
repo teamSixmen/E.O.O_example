@@ -43,7 +43,7 @@ function SetMenus({selectedItems, setSelectedItems, change, setChange, isDisplay
             <div className={style.allBox}>
                 <div className={style.Box}>
                     {getMenu().map(
-                        product => 
+                        product => !product.empty &&
                             <MenuBlock
                                 key={product.menuCode}
                                 item={product}

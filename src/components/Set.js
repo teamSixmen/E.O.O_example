@@ -65,7 +65,7 @@ function Set({ item, isSet, setIsSet, addSide, setAddSide, addDrink, setAddDrink
                             className={style.SideButton}
                             onClick={() => {if (sideNum === 1) setSideNum(sideNum - 1)}}
                         >
-                            <img src="/images/Polygon 5.png" className={style.Polygon}/>
+                            <img src="/images/왼쪽.png" className={style.Polygon}/>
                         </div>
                         {sideMenus.slice(5 * sideNum, 5 * (sideNum + 1)).map(
                             side => 
@@ -80,7 +80,7 @@ function Set({ item, isSet, setIsSet, addSide, setAddSide, addDrink, setAddDrink
                             className={style.SideButton}
                             onClick={() => {if (sideNum === 0) setSideNum(sideNum + 1)}}
                         >
-                            <img src="/images/Polygon 4.png" className={style.Polygon}/>
+                            <img src="/images/오른쪽.png" className={style.Polygon}/>
                         </div>
                     </div>
                     <div className={style.NameBox}>음료</div>
@@ -89,7 +89,7 @@ function Set({ item, isSet, setIsSet, addSide, setAddSide, addDrink, setAddDrink
                             className={style.SideButton}
                             onClick={() => {if (drinkNum === 1) setDrinkNum(drinkNum - 1)}}
                         >
-                            <img src="/images/Polygon 5.png" className={style.Polygon}/> 
+                            <img src="/images/왼쪽.png" className={style.Polygon}/> 
                         </div>
                         {drinkMenus.slice(5 * drinkNum, 5 * (drinkNum + 1)).map(
                             drink => 
@@ -104,7 +104,7 @@ function Set({ item, isSet, setIsSet, addSide, setAddSide, addDrink, setAddDrink
                             className={style.SideButton}
                             onClick={() => {if (drinkNum === 0) setDrinkNum(drinkNum + 1)}}
                         >
-                            <img src="/images/Polygon 4.png" className={style.Polygon}/>
+                            <img src="/images/오른쪽.png" className={style.Polygon}/>
                         </div>
                     </div>
                 </div>
