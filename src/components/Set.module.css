@@ -26,14 +26,26 @@
 .NameBox {
     width: 580px;
     height: 30px;
-    background-color: rgba(255, 184, 0, 1);
+    background-color: rgba(58, 1, 0, 1);
     margin: auto;
     text-align: center;
     line-height: 30px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
 }
 
 .ItemBox {
-    width: 580px;
+    width: 570px;
     height: 130px;
-    margin: auto;
+    margin-left: 12px;
+}
+
+.SideButton {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.Polygon {
+    margin-bottom: 40px;
 }

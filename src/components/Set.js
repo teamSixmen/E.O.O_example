@@ -14,6 +14,8 @@ function Set({ item, isSet, setIsSet, addSide, setAddSide, addDrink, setAddDrink
     // const [addDrink, setAddDrink] = useState(501);
     const [sideMenus, setSideMenus] = useState([]);
     const [drinkMenus, setDrinkMenus] = useState([]);
+    const [sideNum, setSideNum] = useState(0);
+    const [drinkNum, setDrinkNum] = useState(0);
 
     useEffect(
         () => {
@@ -59,7 +61,13 @@ function Set({ item, isSet, setIsSet, addSide, setAddSide, addDrink, setAddDrink
                 <div className={style.AddBox}>
                     <div className={style.NameBox}>사이드</div>
                     <div className={style.ItemBox}>
-                        {sideMenus.map(
+                        <div 
+                            className={style.SideButton}
+                            onClick={() => {if (sideNum === 1) setSideNum(sideNum - 1)}}
+                        >
+                            <img src="/images/Polygon 5.png" className={style.Polygon}/>
+                        </div>
+                        {sideMenus.slice(5 * sideNum, 5 * (sideNum + 1)).map(
                             side => 
                                 <AddBlock
                                     key={side.menuCode}
@@ -68,18 +76,36 @@ function Set({ item, isSet, setIsSet, addSide, setAddSide, addDrink, setAddDrink
                                     setAdd={setAddSide}
                                 />
                         )}
+                        <div 
+                            className={style.SideButton}
+                            onClick={() => {if (sideNum === 0) setSideNum(sideNum + 1)}}
+                        >
+                            <img src="/images/Polygon 4.png" className={style.Polygon}/>
+                        </div>
                     </div>
                     <div className={style.NameBox}>음료</div>
                     <div className={style.ItemBox}>
-                    {drinkMenus.map(
-                        drink => 
-                            <AddBlock
-                                key={drink.menuCode}
-                                item={drink}
-                                add={addDrink}
-                                setAdd={setAddDrink}
-                            />
-                    )}
+                        <div 
+                            className={style.SideButton}
+                            onClick={() => {if (drinkNum === 1) setDrinkNum(drinkNum - 1)}}
+                        >
+                            <img src="/images/Polygon 5.png" className={style.Polygon}/> 
+                        </div>
+                        {drinkMenus.slice(5 * drinkNum, 5 * (drinkNum + 1)).map(
+                            drink => 
+                                <AddBlock
+                                    key={drink.menuCode}
+                                    item={drink}
+                                    add={addDrink}
+                                    setAdd={setAddDrink}
+                                />
+                        )}
+                        <div 
+                            className={style.SideButton}
+                            onClick={() => {if (drinkNum === 0) setDrinkNum(drinkNum + 1)}}
+                        >
+                            <img src="/images/Polygon 4.png" className={style.Polygon}/>
+                        </div>
                     </div>
                 </div>
             }
