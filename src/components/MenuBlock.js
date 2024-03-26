@@ -1,3 +1,7 @@
+import { useState, useRef } from "react";
+
+import Modal from "./Modal";
+
 import style from "./MenuBlock.module.css";
 
 function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) {
