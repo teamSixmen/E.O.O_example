@@ -25,30 +25,36 @@
     background-color: white;
     margin-left: 159px;
     cursor: pointer;
+    position: absolute;
 }
 
 .ReceiptTextName {
     display: inline-block;
     position: absolute;
-    left: 265px;
+    left: 70px;
+    /* margin-right: 50px */
+    
 }
 
 .ReceiptTextPrice {
     display: inline-block;
-    position: absolute;
-    left: 425px;
+    position: relative;
+    left: 55px;
+    /* margin-left: 30px */
 }
 
 .ReceiptTextQuantity {
     display: inline-block;
-    position: absolute;
-    left: 490px;
+    position: relative;
+    left: 90px;
+    /* margin-left: 40px */
 }
 
 .ReceiptTextSum {
     display: inline-block;
-    position: absolute;
-    left: 555px;
+    position: relative;
+    left: 130px;
+    /* margin-left: 40px */
 }
 
 .ReceiptTextBlank {
@@ -63,4 +69,14 @@
     line-height: 85px;
     margin-left: 65px;
     margin-bottom: 30px;;
+}
+
+.직원호출 {
+    width: 768px;
+    height: 806px;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

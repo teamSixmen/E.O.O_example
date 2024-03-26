@@ -64,5 +64,49 @@
             "description" : "라유에 볶아 은은한 파향, 흑임자와 매콤달콤한 중화풍 사천식 소스를 담은 닭다리살 순살치킨",
             "image" : "치파오싸이순살.png"
         }
-    }
+    },
+    { 
+        "menuCode" : 207,
+        "menuName" : "케이준떡강정",
+        "categoryName" : "치킨",
+        "isOrderable" : true,
+        "price" : 13000,
+        "detail" : {
+            "description" : "100% 닭다리살과 쫀득한 쌀떡 매콤달콤한 케이준소스의 환상적인 조화!",
+            "image" : "케이준떡강정.png"
+        }
+       },
+    { 
+        "menuCode" : 208,
+        "menuName" : "후라이드치킨",
+        "categoryName" : "치킨",
+        "isOrderable" : true,
+        "price" : 16900,
+        "detail" : {
+            "description" : "싸이버거 스타일 케이준 양념레시피로 더 바삭하고 스파이시한 핫크리스피 치킨",
+            "image" : "후라이드치킨.png"
+        }
+       },
+    { 
+        "menuCode" : 209,
+        "menuName" : "맘스양념치킨",
+        "categoryName" : "치킨",
+        "isOrderable" : true,
+        "price" : 17500,
+        "detail" : {
+            "description" : "국내산 벌꿀이 함유된 매콤달콤 특제 양념소스로 꿀맛나는 엄마표 효정's양념치킨",
+            "image" : "맘스양념치킨.png"
+        }
+       },
+    { 
+        "menuCode" : 210,
+        "menuName" : "후라이드 통다리(1조각)",
+        "categoryName" : "치킨",
+        "isOrderable" : true,
+        "price" : 4100,
+        "detail" : {
+            "description" : "후라이드의 고소함과 바삭함을 통다리로 크게 즐기는 치킨",
+            "image" : "후라이드 통다리(1조각).png"
+        }
+       }
     ]

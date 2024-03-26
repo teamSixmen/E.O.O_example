@@ -23,7 +23,7 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) 
     //     } else {
     //         if (selectedItems.length < 3) {
     //             // console.log("add");
-    //             const changedItems = [...selectedItems, 
+    //             const changedItems = [...selectedItems,
     //                 {"menuCode": item.menuCode, 
     //                  "menuName": item.menuName, 
     //                  "price": item.price,
@@ -36,7 +36,7 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) 
     //         }
     //     }
     // };
-
+        
     return (
         <>
             <div
@@ -59,6 +59,20 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) 
             />
         </>
     );
+
+    // return (
+    //     <>
+    //         <div
+    //             onClick={() => setModalOpen(true)}
+    //             className={style.Block}
+    //         >
+    //             <br/><img src="/images/temp.jpg" width="100px"/>
+    //             <br/>{item.menuName}<br/>
+    //             {parseInt(item.price / 1000)},{(item.price % 1000)?item.price % 1000:"000"}원
+    //         </div>
+    //     </>
+    // );
 }
+
 
 export default MenuBlock;

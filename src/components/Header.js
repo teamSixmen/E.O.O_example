@@ -19,7 +19,6 @@ function Header({here, setHere}) {
                         className={style.logo}
                         src="/images/twoLineCI.png"
                     />
-                    <div className={style.Blank}></div>
                     <div 
                         onClick={onClickHere}
                         className={style.HereBox}

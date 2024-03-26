@@ -14,12 +14,53 @@
     width: 768px;
     height: 210px;
     justify-content: center;
+    display: inline-block;
 }
 
 .Display {
     width: 670px;
+    height: 150px;
     margin-top: 5px;
     margin-left: 45px;
+    overflow-y: hidden;
+    display: inline-block;
+}
+
+.DisplayButton {
+    text-align: center;
+}
+
+.SelectedButton {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: gray;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.SelectedButton2 {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: white;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.LeftButton {
+    position: absolute;
+    top: 355px;
+    margin-left: 20px;
+}
+
+.LeftButtonStyle {
+}
+
+.RightButton{
+    position: absolute;
+    top: 355px;
+    display: inline-block;
 }
 
 .BottomBox {
@@ -34,8 +75,8 @@
 
 .FrontText {
     display: inline-block;
-    position: absolute;
-    left: 570px;
+    /* position: absolute; */
+    margin-right: 50px;
 }
 
 .NextText {

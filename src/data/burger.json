@@ -66,5 +66,49 @@
          
          "image" : "아라비아따치즈버거.png"
      }
-     }
+     },
+     { 
+      "menuCode" : 107,
+      "menuName" : "오리지널미트볼 버거",
+      "categoryName" : "버거",
+      "isOrderable" : true,
+      "price" : 5800,
+      "detail" : {
+          "description" : "두툼한 미트볼과 블랙페퍼소스의 만남! 육즙 가득한 미트볼과 치킨패티 그리고 진한 블랙페퍼소스의 환상적인 조화!",
+          "image" : "오리지널미트볼버거.png"
+      }
+      },
+     { 
+      "menuCode" : 108,
+      "menuName" : "텍사스바베큐 치킨버거",
+      "categoryName" : "버거",
+      "isOrderable" : true,
+      "price" : 5800,
+      "detail" : {
+          "description" : "두툼한 닭다리살, 통베이컨, 바베큐소스, 딥치즈소스, 딜피클(오이)소스로 완성한 풍미 가득 치킨버거. 묵직한 인기로 컴백!",
+          "image" : "텍사스바베큐치킨버거.png"
+      }
+      },
+     { 
+      "menuCode" : 109,
+      "menuName" : "통새우 버거",
+      "categoryName" : "버거",
+      "isOrderable" : true,
+      "price" : 5100,
+      "detail" : {
+          "description" : "고소하고 탱글한 통새우 패티에 신선한 양상추가 조화로운 버거.",
+          "image" : "통새우버거.png"
+      }
+      },
+     { 
+      "menuCode" : 110,
+      "menuName" : "인크레더블 버거",
+      "categoryName" : "버거",
+      "isOrderable" : true,
+      "price" : 5900,
+      "detail" : {
+          "description" : "",
+          "image" : "인크레더블 버거.png"
+      }
+      }
     ]
