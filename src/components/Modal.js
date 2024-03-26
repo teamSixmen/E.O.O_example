@@ -45,7 +45,10 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
 
     const onClickHandler = () => {
 
-        const index = selectedItems.findIndex(function(selected){return selected.menuCode === product.menuCode});
+        const index = 
+            isSet?
+            selectedItems.findIndex(function(selected){return selected.menuCode === product.menuCode * 100 + ((addSide - 401) * 10) + (addDrink - 501)}):
+            selectedItems.findIndex(function(selected){return selected.menuCode === product.menuCode});
 
         if (index !== -1) {
             // console.log("plus");
@@ -68,8 +71,8 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                 // console.log(selectedItems);
                 } else if (isSet) {
                     const changedItems = [...selectedItems,
-                    {"menuCode": product.menuCode * 100 + ((addSide - 400) * 10) + (addDrink - 500),
-                    "menuName": product.menuName.concat("세트"),
+                    {"menuCode": product.menuCode * 100 + ((addSide - 401) * 10) + (addDrink - 501),
+                    "menuName": product.menuName.concat("세트(", (addSide - 401), (addDrink - 501),")"),
                     "price": product.price + sideMenus[sideIndex].price + drinkMenus[drinkIndex].price - 500,
                     "quantity": count}];
                 setSelectedItems(changedItems);
@@ -127,6 +130,7 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                     </div>
                     <div className={style.Add}>
                         <Set
+                            key={product.menuCode}
                             item={product}
                             isSet={isSet}
                             setIsSet={setIsSet}
