@@ -1,14 +1,18 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import style from "./Header.module.css";
 
 function Header({here, setHere}) {
 
     const navigate = useNavigate();
+    const {pathname} = useLocation();
 
     const onClickHome = () => navigate("/");
     const onClickHere = () => setHere(true);
     const onClickGo = () => setHere(false);
+
+
+
 
     return (
         <>
@@ -19,20 +23,41 @@ function Header({here, setHere}) {
                         className={style.logo}
                         src="/images/twoLineCI.png"
                     />
-                    <div 
-                        onClick={onClickHere}
+                    {
+                        pathname === '/pay/card' || pathname === '/receipt' || pathname === '/pay/appcard' ?  
+                        <div 
                         className={style.HereBox}
                         style={{backgroundColor: here? "rgba(255, 184, 0, 1)":"rgba(255, 255, 255, 1"}}
-                    >
-                        매장
-                    </div>
-                    <div 
-                        onClick={onClickGo}
+                        // onClick={onClickHere}
+                        >
+                            매장
+                        </div> :
+                        <div 
+                        className={style.HereBox}
+                        style={{backgroundColor: here? "rgba(255, 184, 0, 1)":"rgba(255, 255, 255, 1"}}
+                        onClick={onClickHere}
+                        >
+                            매장
+                        </div>
+                    }
+                    {
+                        pathname === '/pay/card' || pathname === '/receipt' || pathname === '/pay/appcard' ?  
+                        <div 
+                        // onClick={onClickGo}
                         className={style.HereBox}
                         style={{backgroundColor: !here? "rgba(255, 184, 0, 1)":"rgba(255, 255, 255, 1"}}
                     >
                         포장
-                    </div>
+                        </div> : 
+                        <div 
+                        onClick={onClickGo}
+                        className={style.HereBox}
+                        style={{backgroundColor: !here? "rgba(255, 184, 0, 1)":"rgba(255, 255, 255, 1"}}
+                        >
+                        포장
+                        </div>
+                    }
+
                     <div 
                         onClick={onClickHome}
                         className={style.HomeBox}
