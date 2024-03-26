@@ -5,6 +5,7 @@
 }
 .BlankBox {
     height: 100px;
+    margin-top: -4px;
 }
 
 .TopBox {
