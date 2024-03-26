@@ -5,7 +5,7 @@ import OrderMenus from "../components/SelectedMenus";
 
 import style from "./Layouts.module.css";
 
-function OrderLayout({ here, setHere, selectedItems, setSelectedItems, change, setChange}) {
+function OrderLayout({ here, setHere, selectedItems, setSelectedItems, change, setChange, isDisplay, setIsDisplay}) {
 
     return (
         <>
@@ -19,6 +19,8 @@ function OrderLayout({ here, setHere, selectedItems, setSelectedItems, change, s
                 setSelectedItems={setSelectedItems}
                 change={change}
                 setChange={setChange}
+                isDisplay={isDisplay}
+                setIsDisplay={setIsDisplay}
             />
             <SelectPayment/>
             <Footer/>

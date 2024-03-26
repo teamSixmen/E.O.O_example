@@ -104,6 +104,8 @@ function App() {
             setSelectedItems={setSelectedItems}
             change={change}
             setChange={setChange}
+            isDisplay={isDisplay}
+            setIsDisplay={setIsDisplay}
           />}>
             <Route index element={<OrderLayout
               here={here}
@@ -112,6 +114,8 @@ function App() {
               setSelectedItems={setSelectedItems}
               change={change}
               setChange={setChange}
+              isDisplay={isDisplay}
+              setIsDisplay={setIsDisplay}
             />}/>
           </Route>
           <Route path="pay" element={<StandardLayout
