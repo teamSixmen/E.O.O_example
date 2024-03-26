@@ -2,6 +2,9 @@ import style from "./MenuBlock.module.css";
 
 function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) {
 
+    const [modalOpen, setModalOpen] = useState(false);
+    const modalBackground = useRef();
+
     // const onClickHandler = () => {
 
     //     const index = selectedItems.findIndex(function(selected){return selected.menuCode === item.menuCode});
@@ -14,7 +17,7 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) 
     //         setChange(!change);
     //         // console.log(selectedItems);
     //     } else {
-    //         if (selectedItems.length < 6) {
+    //         if (selectedItems.length < 3) {
     //             // console.log("add");
     //             const changedItems = [...selectedItems,
     //                 {"menuCode": item.menuCode, 
@@ -29,6 +32,29 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) 
     //         }
     //     }
     // };
+        
+    return (
+        <>
+            <div
+                onClick={() => setModalOpen(true)}
+                className={style.Block}
+            >
+                <br/><img src="/images/temp.jpg" width="100px"/>
+                <br/>{item.menuName}<br/>
+                {parseInt(item.price / 1000)},{(item.price % 1000)?item.price % 1000:"000"}원
+            </div>
+            <Modal
+                product={item}
+                selectedItems={selectedItems}
+                setSelectedItems={setSelectedItems}
+                change={change}
+                setChange={setChange}
+                modalOpen={modalOpen}
+                setModalOpen={setModalOpen}
+                modalBackground={modalBackground}
+            />
+        </>
+    );
 
     // return (
     //     <>
@@ -43,5 +69,6 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change,setChange }) 
     //     </>
     // );
 }
+
 
 export default MenuBlock;
