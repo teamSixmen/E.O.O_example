@@ -57,14 +57,16 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                     {"menuCode": product.menuCode, 
                      "menuName": product.menuName, 
                      "price": product.price,
+                     "image":product.detail.image,
                      "quantity": count}];
-                setSelectedItems(changedItems);
-                setChange(!change);
-                } else if (isSet) {
-                    const changedItems = [...selectedItems,
-                    {"menuCode": product.menuCode * 100 + ((addSide - 401) * 10) + (addDrink - 501),
-                    "menuName": product.menuName.concat("세트(", (addSide - 401), (addDrink - 501),")"),
-                    "price": product.price + sideMenus[sideIndex].price + drinkMenus[drinkIndex].price - 500,
+                     setSelectedItems(changedItems);
+                     setChange(!change);
+                    } else if (isSet) {
+                        const changedItems = [...selectedItems,
+                            {"menuCode": product.menuCode * 100 + ((addSide - 401) * 10) + (addDrink - 501),
+                            "menuName": product.menuName.concat("세트(", (addSide - 401), (addDrink - 501),")"),
+                            "price": product.price + sideMenus[sideIndex].price + drinkMenus[drinkIndex].price - 500,
+                            "image":product.detail.image,
                     "quantity": count}];
                 setSelectedItems(changedItems);
                 setChange(!change);
@@ -96,7 +98,7 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                 <div className={style.Content}>
                     <div className={style.Outer}>
                         <div className={style.Picture}>
-                            <img src="/images/temp.jpg" width="150px"/>
+                            <img src={product.detail.image} width="150px"/>
                         </div>
                         <div className={style.Text}>
                             <h3>{product.menuName}</h3>

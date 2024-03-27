@@ -41,7 +41,7 @@ function Selected({item, selectedItems, setSelectedItems, change, setChange }) {
     return (
         <>
             <div className={style.Selected}>
-                <img src="/images/temp.jpg" width="90px"/>
+                <img src={item.image} width="90px"/>
                 <br/>{item.menuName}<br/>
                 <div 
                     onClick={onClickMinusButton}

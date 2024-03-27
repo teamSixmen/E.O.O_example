@@ -30,13 +30,13 @@ function Set({ item, isSet, setIsSet, addSide, setAddSide, addDrink, setAddDrink
                         style={{backgroundColor: !isSet? "rgba(255, 184, 0, 1)":"rgba(255, 255, 255, 1)"}}
                         onClick={() => setIsSet(false)}
                     >
-                        <img src="/images/temp.jpg" width="50px"/><br/>단품</div>
+                        <img src="/images/burgermenu/싸이버거.png" width="50px"/><br/>단품</div>
                     <div 
                         className={style.SetBox}
                         style={{backgroundColor: isSet? "rgba(255, 184, 0, 1)":"rgba(255, 255, 255, 1)"}}
                         onClick={() => setIsSet(true)}
                     >
-                        <img src="/images/temp.jpg" width="50px"/><br/>세트</div>
+                        <img src="/images/setmenu/맘스패밀리(3인세트).png" width="50px"/><br/>세트</div>
                 </div>
             }
             {item.menuCode < 300 && isSet &&

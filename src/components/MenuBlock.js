@@ -15,7 +15,7 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change, setChange })
                 onClick={() => setModalOpen(true)}
                 className={style.Block}
             >
-                <br/><img src="/images/temp.jpg" width="100px"/>
+                <br/><img src={item.detail.image} width="100px"/>
                 <br/>{item.menuName}<br/>
                 {parseInt(item.price / 1000)},{(item.price % 1000)?item.price % 1000:"000"}원
             </div>
