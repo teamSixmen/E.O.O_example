@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
-import Selected from "../components/Selected";
 
-import style from "./SelectedMenus.module.css";
+import Selected from "./Selected";
 import SelectedMenusButton from "./SelectedMenusButton";
 
-function SelectedMenus({ selectedItems, setSelectedItems, change, setChange, isDisplay, setIsDisplay }) {
+import style from "./SelectedMenus.module.css";
 
-    const [temp,setTemp] = useState([]);
+function SelectedMenus({ selectedItems, setSelectedItems }) {
+
+    const [change, setChange] = useState(false);
+    const [isDisplay, setIsDisplay] = useState(false);
 
     const selectedMenusButtonStyle = {
-        visibility: selectedItems.length<4?'hidden':'visible',
-        cursor: selectedItems.length<4?'none':'pointer'
-    }
+        visibility: selectedItems.length < 4? 'hidden':'visible',
+        cursor: selectedItems.length < 4? 'none':'pointer'
+    };
 
     let totalPrice = 0;
 
@@ -21,31 +23,16 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange, isD
         }
     )
     
-    let selectedTemp;
-
-    const onClickLeftButton = () => {
-        setIsDisplay(false);
-        selectedTemp = selectedItems.slice(0,3);
-        setTemp(selectedTemp);
-    }
-    
-    const onClickRightButton = () => {
-        setIsDisplay(true);
-        selectedTemp = selectedItems.slice(3,6);
-        setTemp(selectedTemp);
-    }
-    
-    useEffect(()=>{
-        if(selectedItems.length<4){
-            const selectedTemp = selectedItems.slice(0,3);
-            setTemp(selectedTemp);
-            setIsDisplay(false);
-        } else {
-            const selectedTemp = selectedItems.slice(3,6);
-            setTemp(selectedTemp);
-            setIsDisplay(true);
-        }
-    },[selectedItems])
+    useEffect(
+        () => {
+            if(selectedItems.length < 4){
+                setIsDisplay(false);
+            } else {
+                setIsDisplay(true);
+            }
+        },
+        [selectedItems]
+    );
 
     return (
         <>
@@ -53,10 +40,10 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange, isD
                 <div className={style.Selected}>
                     <div className={style.TopBox}></div>
                     <div className={style.LeftButton}>
-                        <img src="/images/왼쪽.png" onClick={onClickLeftButton} className={style.LeftButtonStyle} style={selectedMenusButtonStyle}/>
+                        <img src="/images/왼쪽.png" onClick={() => setIsDisplay(false)} className={style.LeftButtonStyle} style={selectedMenusButtonStyle}/>
                     </div>
                     <div className={style.Display}>
-                        {temp.map(
+                        {selectedItems.slice(isDisplay * 3, (isDisplay + 1) * 3).map(
                             selectedItem =>
                                 <Selected
                                     key={selectedItem.menuCode}
@@ -69,7 +56,7 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange, isD
                         )}
                     </div>
                     <div className={style.RightButton}>
-                        <img src="/images/오른쪽.png" onClick={onClickRightButton} className={style.RightButtonStyle} style={selectedMenusButtonStyle}/>
+                        <img src="/images/오른쪽.png" onClick={() => setIsDisplay(true)} className={style.RightButtonStyle} style={selectedMenusButtonStyle}/>
                     </div>
                     <div className={style.DisplayButton}>
                         <SelectedMenusButton selectedItems={selectedItems} isDisplay={isDisplay}/>

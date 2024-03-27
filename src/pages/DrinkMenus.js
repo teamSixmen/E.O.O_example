@@ -6,7 +6,7 @@ import MenuBlock from "../components/MenuBlock";
 
 import style from "./Menus.module.css";
 
-function DrinkMenus({selectedItems, setSelectedItems, change, setChange, isDisplay, setIsDisplay}) {
+function DrinkMenus({ selectedItems, setSelectedItems, change, setChange }) {
 
     const [drinkMenuList, setDrinkMenuList] = useState([]);
     const [page, setPage] = useState(1);
@@ -51,20 +51,18 @@ function DrinkMenus({selectedItems, setSelectedItems, change, setChange, isDispl
                                 setSelectedItems={setSelectedItems}
                                 change={change}
                                 setChange={setChange}
-                                isDisplay={isDisplay}
-                                setIsDisplay={setIsDisplay}
                             />
                         
                 )}
                 <div className={style.pagenation}>
                     {Array.from({ length: Math.ceil(drinkMenuList.length / onePageSixMenus) }, (_, index) => (
-                                    <button
-                                        key={index}
-                                        className={page === index + 1 ? style.buttonActive : style.pagebutton}
-                                        onClick={() => pageChange(index + 1)}
-                                    >
-                                        {index + 1}
-                                    </button>
+                        <button
+                            key={index}
+                            className={page === index + 1 ? style.buttonActive : style.pagebutton}
+                            onClick={() => pageChange(index + 1)}
+                        >
+                            {index + 1}
+                        </button>
                     ))}
                 </div>
 

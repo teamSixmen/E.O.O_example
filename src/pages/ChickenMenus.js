@@ -6,7 +6,7 @@ import MenuBlock from "../components/MenuBlock";
 
 import style from "./Menus.module.css";
 
-function ChickenMenus({selectedItems, setSelectedItems, change, setChange, isDisplay, setIsDisplay}) {
+function ChickenMenus({ selectedItems, setSelectedItems, change, setChange }) {
 
     const [chickenMenuList, setChickenMenuList] = useState([]);
     const [page, setPage] = useState(1);
@@ -27,7 +27,7 @@ function ChickenMenus({selectedItems, setSelectedItems, change, setChange, isDis
 
         if(currentMenus.length < onePageSixMenus) {
             const emptyChan = onePageSixMenus - currentMenus.length;
-            for(let i = 0; i <emptyChan; i++) {
+            for(let i = 0; i < emptyChan; i++) {
                 currentMenus.push({empty:true})
             }
         }
@@ -51,20 +51,18 @@ function ChickenMenus({selectedItems, setSelectedItems, change, setChange, isDis
                                 setSelectedItems={setSelectedItems}
                                 change={change}
                                 setChange={setChange}
-                                isDisplay={isDisplay}
-                                setIsDisplay={setIsDisplay}
                             />
                         
                 )}
                 <div className={style.pagenation}>
                     {Array.from({ length: Math.ceil(chickenMenuList.length / onePageSixMenus) }, (_, index) => (
-                                    <button
-                                        key={index}
-                                        className={page === index + 1 ? style.buttonActive : style.pagebutton}
-                                        onClick={() => pageChange(index + 1)}
-                                    >
-                                        {index + 1}
-                                    </button>
+                        <button
+                            key={index}
+                            className={page === index + 1 ? style.buttonActive : style.pagebutton}
+                            onClick={() => pageChange(index + 1)}
+                        >
+                            {index + 1}
+                        </button>
                     ))}
                 </div>
 

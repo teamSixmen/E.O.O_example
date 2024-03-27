@@ -1,4 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom";
+
 import {useState} from 'react';
 
 import style from "./Footer.module.css"

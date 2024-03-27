@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import { useNavigate } from "react-router-dom";
 
@@ -7,8 +7,10 @@ import Timer from "../components/Timer";
 
 import style from "./Style.module.css";
 
-function Receipt({here, setHere, selectedItems, setSelectedItems, waitingNum, setWaitingNum}) {
+function Receipt({here, selectedItems, waitingNum, setWaitingNum}) {
     
+    const navigate = useNavigate();
+
     const copiedItems = selectedItems;
     const sortedItems = copiedItems.sort(function (a, b) {
         let x = a.menuName;
@@ -24,33 +26,22 @@ function Receipt({here, setHere, selectedItems, setSelectedItems, waitingNum, se
     });
 
     let totalPrice = 0;
+    
     selectedItems.map(
         item => {
             totalPrice += (item.price * item.quantity);
         }
     )
 
-    const navigate = useNavigate();
-
     useEffect (
         () => {
-            // const timer = setInterval(() => {
-            //     navigate("/");
-            // }, 60000);
-            
 
             return () => {
                 setWaitingNum(waitingNum + 1);
-                // clearInterval(timer);
-                // setSelectedItems([]);
             }
         },
         []
     );
-
-    const onClickHandler = () => {
-        navigate("/");
-    };
 
     return (
         <>
@@ -59,7 +50,7 @@ function Receipt({here, setHere, selectedItems, setSelectedItems, waitingNum, se
                 <h1>주문이 완료되었습니다!</h1>
                 <div 
                     className={style.Receipt}
-                    onClick={onClickHandler}
+                    onClick={() => navigate("/")}
                 >
                     <p className={style.ReceiptTextName}>품목명</p>
                     <p className={style.ReceiptTextPrice}>단가</p>

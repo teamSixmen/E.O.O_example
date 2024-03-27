@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { getSideMenus } from "../api/MenuAPI";
-import { getDrinkMenus } from "../api/MenuAPI";
+import { getSideMenus, getDrinkMenus } from "../api/MenuAPI";
 
 import AddBlock from "./AddBlock";
 
@@ -9,9 +8,6 @@ import style from "./Set.module.css";
 
 function Set({ item, isSet, setIsSet, addSide, setAddSide, addDrink, setAddDrink }) {
     
-    // const [isSet, setIsSet] = useState(true);
-    // const [addSide, setAddSide] = useState(401);
-    // const [addDrink, setAddDrink] = useState(501);
     const [sideMenus, setSideMenus] = useState([]);
     const [drinkMenus, setDrinkMenus] = useState([]);
     const [sideNum, setSideNum] = useState(0);
@@ -24,20 +20,6 @@ function Set({ item, isSet, setIsSet, addSide, setAddSide, addDrink, setAddDrink
         },
         []
     )
-
-    // useEffect(
-    //     () => {
-    //         console.log(addSide);
-    //     },
-    //     [addSide]
-    // );
-    
-    // useEffect(
-    //     () => {
-    //         console.log(addDrink);
-    //     },
-    //     [addDrink]
-    // );
 
     return (
         <>

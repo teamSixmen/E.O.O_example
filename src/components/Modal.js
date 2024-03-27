@@ -7,7 +7,7 @@ import { getDrinkMenus } from "../api/MenuAPI";
 
 import style from "./Modal.module.css";
 
-function Modal({ product, selectedItems, setSelectedItems, change, setChange, modalOpen, setModalOpen, modalBackground, isDisplay, setIsDisplay}) {
+function Modal({ product, selectedItems, setSelectedItems, change, setChange, modalOpen, setModalOpen, modalBackground}) {
 
     const [count, setCount] = useState(1);
     const [isSet, setIsSet] = useState(false);
@@ -26,7 +26,7 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
             setDrinkMenus(getDrinkMenus());
         },
         []
-    )
+    );
     
     const onClickMinusButton = () => {
                 
@@ -36,17 +36,8 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
         } else {
             setCount(count - 1);
         }
-
-        if ( isDisplay ) {
-            setIsDisplay(!isDisplay);
-        }
     };
     
-    const onClickPlusButton = () => {
-        
-        setCount(count + 1);
-    };
-
     const onClickHandler = () => {
 
         const index = 
@@ -55,15 +46,12 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
             selectedItems.findIndex(function(selected){return selected.menuCode === product.menuCode});
 
         if (index !== -1) {
-            // console.log("plus");
             let copiedItems = selectedItems;
             copiedItems[index].quantity += count;
             setSelectedItems(copiedItems);
             setChange(!change);
-            // console.log(selectedItems);
         } else {
             if (selectedItems.length < 6) {
-                // console.log("add");
                 if (!isSet) {
                 const changedItems = [...selectedItems, 
                     {"menuCode": product.menuCode, 
@@ -72,7 +60,6 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                      "quantity": count}];
                 setSelectedItems(changedItems);
                 setChange(!change);
-                // console.log(selectedItems);
                 } else if (isSet) {
                     const changedItems = [...selectedItems,
                     {"menuCode": product.menuCode * 100 + ((addSide - 401) * 10) + (addDrink - 501),
@@ -95,7 +82,7 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
 
     return (
         <>
-        {
+            {
             modalOpen &&
             <div
                 className={style.Container}
@@ -122,7 +109,7 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                             </div>
                             수량 : {count} 
                             <div
-                                onClick={onClickPlusButton}
+                                onClick={() => setCount(count + 1)}
                                 className={style.Button}
                             >
                                 +
