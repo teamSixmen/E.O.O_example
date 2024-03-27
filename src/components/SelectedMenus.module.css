@@ -6,8 +6,12 @@
 
 .TopBox {
     width: 768px;
-    height: 35px;
+    height: 45px;
     background-color: rgba(58, 1, 0, 1);
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    font-size: 130%;
 }
 
 .Selected {
