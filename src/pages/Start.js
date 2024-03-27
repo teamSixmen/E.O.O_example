@@ -4,7 +4,9 @@ import { useNavigate } from "react-router-dom";
 
 import style from "./Start.module.css";
 
-function Start({here, setHere, setSelectedItems}) {
+function Start({ setHere, setSelectedItems }) {
+
+    const navigate = useNavigate();
 
     useEffect(
         () => {
@@ -12,8 +14,6 @@ function Start({here, setHere, setSelectedItems}) {
         },
         []
     );
-    
-    const navigate = useNavigate();
 
     const onClickHere = () => {
         setHere(true);
@@ -25,15 +25,11 @@ function Start({here, setHere, setSelectedItems}) {
         navigate("menu/burgermenu");
     };
 
-    const onClickHandler = () => {
-        navigate("/help")
-    };
-
     return (
         <>
             <div className={style.adv}></div>
             <div className={style.empolyeeCall}>
-                <button onClick={onClickHandler}>
+                <button onClick={() => navigate("/help")}>
                     <span>💇‍♀️</span>
                     <br/>
                     직원호출

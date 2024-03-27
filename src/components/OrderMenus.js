@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import Selected from "../components/Selected";
+
+import Selected from "./Selected";
+import SelectedMenusButton from "./SelectedMenusButton";
 
 import style from "./SelectedMenus.module.css";
-import SelectedMenusButton from "./SelectedMenusButton";
 
 function OrderMenus({ selectedItems, setSelectedItems, change, setChange, isDisplay, setIsDisplay }) {
 
-    const [temp,setTemp] = useState([]);
+    const [temp, setTemp] = useState([]);
 
     const selectedMenusButtonStyle = {
         visibility: selectedItems.length<4?'hidden':'visible',

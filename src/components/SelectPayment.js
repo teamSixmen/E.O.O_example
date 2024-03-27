@@ -10,19 +10,12 @@ function SelectPayment() {
     
     const navigate = useNavigate();
 
-    const onClickRadio = e => {
-        // console.log(e.target.value);
-        setChecked(e.target.value);
-    };
-
     const onClickHandler = () => {
 
         (checked === "card")? navigate("/pay/card"):navigate("/pay/appcard")
         setChecked("card");
     };
     
-    const onClickCancel = () => navigate("/menu/burgermenu");
-
     const direction = (checked === "app")? "/images/vector05.png":"/images/vector04.png";
 
     return (
@@ -49,7 +42,7 @@ function SelectPayment() {
                                 type="radio"
                                 value="card"
                                 defaultChecked
-                                onClick={onClickRadio}
+                                onClick={e => setChecked(e.target.value)}
                             />
                         </div>
                     </label>
@@ -67,7 +60,7 @@ function SelectPayment() {
                                 name="cardOrApp" 
                                 type="radio"
                                 value="app"
-                                onClick={onClickRadio}
+                                onClick={e => setChecked(e.target.value)}
                             />
                         </div>
                     </label>
@@ -80,7 +73,7 @@ function SelectPayment() {
                         결제하기
                     </div>
                     <div 
-                        onClick={onClickCancel}
+                        onClick={() => navigate("/menu/burgermenu")}
                         className={style.CancelBox}
                     >
                         취소

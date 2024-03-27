@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MenuLayout from "./layouts/MenuLayout";
@@ -24,133 +25,105 @@ function App() {
   const [selectedItems, setSelectedItems] = useState([]);
   const [change, setChange] = useState(false);
   const [waitingNum, setWaitingNum] = useState(1);
-  const [isDisplay,setIsDisplay] = useState(false); // 선택 메뉴 개수에 따라 노출되는 메뉴 변경 Boolean
 
   return (
     <>
-    <div className={style.App}>
-      <div className={style.kiosk}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Start
-            here={here}
-            setHere={setHere}
-            setSelectedItems={setSelectedItems}
-          />}>
-          </Route>
-          <Route path="menu" element={<MenuLayout
-            here={here}
-            setHere={setHere}
-            selectedItems={selectedItems}
-            setSelectedItems={setSelectedItems}
-            change={change}
-            setChange={setChange}
-            isDisplay={isDisplay}
-            setIsDisplay={setIsDisplay}
-          />}>
-            <Route index element={<BurgerMenus
-              selectedItems={selectedItems}
-              setSelectedItems={setSelectedItems}
-              change={change}
-              setChange={setChange}
-              isDisplay={isDisplay}
-              setIsDisplay={setIsDisplay}
-            />}/>
-            <Route path="burgermenu" element={<BurgerMenus
-              selectedItems={selectedItems}
-              setSelectedItems={setSelectedItems}
-              change={change}
-              setChange={setChange}
-              isDisplay={isDisplay}
-              setIsDisplay={setIsDisplay}
-            />}/>
-            <Route path="chickenmenu" element={<ChickenMenus
-              selectedItems={selectedItems}
-              setSelectedItems={setSelectedItems}
-              change={change}
-              setChange={setChange}
-              isDisplay={isDisplay}
-              setIsDisplay={setIsDisplay}
-            />}/>
-            <Route path="setmenu" element={<SetMenus
-              selectedItems={selectedItems}
-              setSelectedItems={setSelectedItems}
-              change={change}
-              setChange={setChange}
-              isDisplay={isDisplay}
-              setIsDisplay={setIsDisplay}
-            />}/>
-            <Route path="sidemenu" element={<SideMenus
-              selectedItems={selectedItems}
-              setSelectedItems={setSelectedItems}
-              change={change}
-              setChange={setChange}
-              isDisplay={isDisplay}
-              setIsDisplay={setIsDisplay}
-            />}/>
-            <Route path="drinkmenu" element={<DrinkMenus
-              selectedItems={selectedItems}
-              setSelectedItems={setSelectedItems}
-              change={change}
-              setChange={setChange}
-              isDisplay={isDisplay}
-              setIsDisplay={setIsDisplay}
-            />}/>
-          </Route>
-          <Route path="order" element={<OrderLayout
-            here={here}
-            setHere={setHere}
-            selectedItems={selectedItems}
-            setSelectedItems={setSelectedItems}
-            change={change}
-            setChange={setChange}
-            isDisplay={isDisplay}
-            setIsDisplay={setIsDisplay}
-          />}>
-            <Route index element={<OrderLayout
-              here={here}
-              setHere={setHere}
-              selectedItems={selectedItems}
-              setSelectedItems={setSelectedItems}
-              change={change}
-              setChange={setChange}
-              isDisplay={isDisplay}
-              setIsDisplay={setIsDisplay}
-            />}/>
-          </Route>
-          <Route path="pay" element={<StandardLayout
-            here={here}
-            setHere={setHere}
-          />}>
-            <Route index element={<Card/>}/>
-            <Route path="card" element={<Card/>}/>
-            <Route path="appcard" element={<AppCard/>}/>
-          </Route>
-          <Route path="receipt" element={<StandardLayout
-            here={here}
-            setHere={setHere}
-          />}>
-            <Route index element={<Receipt
-              here={here}
-              setHere={setHere}
-              selectedItems={selectedItems}
-              setSelectedItems={setSelectedItems}
-              waitingNum={waitingNum}
-              setWaitingNum={setWaitingNum}
-            />}/>
-          </Route>
-          <Route path='help' element={<StandardLayout
-            here={here}
-            setHere={setHere}
-          />}>
-              <Route index element={<Help
+      <div className={style.App}>
+        <div className={style.kiosk}>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Start
+                setHere={setHere}
                 setSelectedItems={setSelectedItems}
               />}>
-            </Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
-      </div>
+              </Route>
+              <Route path="menu" element={<MenuLayout
+                here={here}
+                setHere={setHere}
+                selectedItems={selectedItems}
+                setSelectedItems={setSelectedItems}
+              />}>
+                <Route index element={<BurgerMenus
+                  selectedItems={selectedItems}
+                  setSelectedItems={setSelectedItems}
+                  change={change}
+                  setChange={setChange}
+                />}/>
+                <Route path="burgermenu" element={<BurgerMenus
+                  selectedItems={selectedItems}
+                  setSelectedItems={setSelectedItems}
+                  change={change}
+                  setChange={setChange}
+                />}/>
+                <Route path="chickenmenu" element={<ChickenMenus
+                  selectedItems={selectedItems}
+                  setSelectedItems={setSelectedItems}
+                  change={change}
+                  setChange={setChange}
+                />}/>
+                <Route path="setmenu" element={<SetMenus
+                  selectedItems={selectedItems}
+                  setSelectedItems={setSelectedItems}
+                  change={change}
+                  setChange={setChange}
+                />}/>
+                <Route path="sidemenu" element={<SideMenus
+                  selectedItems={selectedItems}
+                  setSelectedItems={setSelectedItems}
+                  change={change}
+                  setChange={setChange}
+                />}/>
+                <Route path="drinkmenu" element={<DrinkMenus
+                  selectedItems={selectedItems}
+                  setSelectedItems={setSelectedItems}
+                  change={change}
+                  setChange={setChange}
+                />}/>
+              </Route>
+              <Route path="order" element={<OrderLayout
+                here={here}
+                setHere={setHere}
+                selectedItems={selectedItems}
+                setSelectedItems={setSelectedItems}
+              />}>
+                <Route index element={<OrderLayout
+                  here={here}
+                  setHere={setHere}
+                  selectedItems={selectedItems}
+                  setSelectedItems={setSelectedItems}
+                />}/>
+              </Route>
+              <Route path="pay" element={<StandardLayout
+                here={here}
+                setHere={setHere}
+              />}>
+                <Route index element={<Card/>}/>
+                <Route path="card" element={<Card/>}/>
+                <Route path="appcard" element={<AppCard/>}/>
+              </Route>
+              <Route path="receipt" element={<StandardLayout
+                here={here}
+                setHere={setHere}
+              />}>
+                <Route index element={<Receipt
+                  here={here}
+                  selectedItems={selectedItems}
+                  waitingNum={waitingNum}
+                  setWaitingNum={setWaitingNum}
+                />}/>
+              </Route>
+              <Route path='help' element={<StandardLayout
+                here={here}
+                setHere={setHere}
+              />}>
+                  <Route index element={<Help
+                    setSelectedItems={setSelectedItems}
+                  />}>
+                </Route>
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        </div>
       </div>
     </>
   );

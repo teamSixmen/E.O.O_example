@@ -10,15 +10,12 @@ function Timer() {
 
     useEffect(
         () => {
-            // console.log("hi");
             const timer =
                 setInterval(
                     () => {
-                        // console.log(sec);
                         setSec((prev) => prev - 1);
 
                         if (sec < 1) {
-                            // console.log("end?");
                             navigate("/");
                         }
                     }, 1000

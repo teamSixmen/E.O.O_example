@@ -8,22 +8,17 @@ import Footer from "../components/Footer";
 
 import style from "./Layouts.module.css";
 
-function MenuLayout({ here, setHere, selectedItems, setSelectedItems, change, setChange, isDisplay, setIsDisplay}) {
+function MenuLayout({ here, setHere, selectedItems, setSelectedItems }) {
 
     return (
         <>
             <Header
                 here={here}
                 setHere={setHere}
-                setSelectedItems={setSelectedItems}
             />
             <SelectedMenus
                 selectedItems={selectedItems}
                 setSelectedItems={setSelectedItems}
-                change={change}
-                setChange={setChange}
-                isDisplay={isDisplay}
-                setIsDisplay={setIsDisplay}
             />
             <Order
                 selectedItems={selectedItems}
