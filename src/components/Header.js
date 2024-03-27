@@ -1,14 +1,11 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import style from "./Header.module.css";
 
 function Header({here, setHere}) {
 
     const navigate = useNavigate();
-
-    const onClickHome = () => navigate("/");
-    const onClickHere = () => setHere(true);
-    const onClickGo = () => setHere(false);
+    const {pathname} = useLocation();
 
     return (
         <>
@@ -19,22 +16,25 @@ function Header({here, setHere}) {
                         className={style.logo}
                         src="/images/twoLineCI.png"
                     />
+
                     <div 
-                        onClick={onClickHere}
                         className={style.HereBox}
                         style={{backgroundColor: here? "rgba(255, 184, 0, 1)":"rgba(255, 255, 255, 1"}}
+                        onClick={() => {pathname.match("pay") || pathname === "/receipt"? alert("지금은 변경할 수 없습니다."):setHere(true)}}
                     >
                         매장
-                    </div>
+                    </div> 
+
                     <div 
-                        onClick={onClickGo}
                         className={style.HereBox}
                         style={{backgroundColor: !here? "rgba(255, 184, 0, 1)":"rgba(255, 255, 255, 1"}}
+                        onClick={() => {pathname.match("pay") || pathname === "/receipt"? alert("지금은 변경할 수 없습니다."):setHere(false)}}
                     >
                         포장
                     </div>
+
                     <div 
-                        onClick={onClickHome}
+                        onClick={() => navigate("/")}
                         className={style.HomeBox}
                     >
                         <img 

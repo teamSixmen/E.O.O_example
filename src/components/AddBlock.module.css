@@ -1,0 +1,13 @@
+.AddBox {
+    width: 90px;
+    height: 115px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    font-size: 70%;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 2.5px;
+    cursor: pointer;
+}

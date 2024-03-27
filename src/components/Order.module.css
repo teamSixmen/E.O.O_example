@@ -1,21 +1,24 @@
 .Box {
     width: 768px;
-    height: 60px;
+    height: 50px;
+    display: flex;
 }
 
 .Blank {
     width: 525px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .Button {
     width: 220px;
-    height: 60px;
+    height: 50px;
     background-color: rgba(255, 184, 0, 1);
     text-align: center;
     font-size: 150%;
     font-weight: bold;
     line-height: 60px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }

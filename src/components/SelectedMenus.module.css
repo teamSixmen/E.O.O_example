@@ -14,12 +14,52 @@
     width: 768px;
     height: 210px;
     justify-content: center;
+    display: inline-block;
 }
 
 .Display {
     width: 670px;
+    height: 150px;
     margin-top: 5px;
-    margin-left: 45px;
+    margin-left: 50px;
+    overflow-y: hidden;
+    display: inline-block;
+}
+
+.DisplayButton {
+    text-align: center;
+}
+
+.SelectedButton {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: gray;
+    display: inline-block;
+    margin-right: 2px;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+.SelectedButton2 {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: white;
+    display: inline-block;
+    margin-right: 2px;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+.LeftButton {
+    position: absolute;
+    top: 290px;
+    margin-left: 20px;
+}
+
+.RightButton{
+    position: absolute;
+    top: 290px;
+    display: inline-block;
 }
 
 .BottomBox {

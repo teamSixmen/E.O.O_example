@@ -1,8 +1,19 @@
-import Selected from "../components/Selected";
+import { useEffect, useState } from "react";
+
+import Selected from "./Selected";
+import SelectedMenusButton from "./SelectedMenusButton";
 
 import style from "./SelectedMenus.module.css";
 
-function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
+function SelectedMenus({ selectedItems, setSelectedItems }) {
+
+    const [change, setChange] = useState(false);
+    const [isDisplay, setIsDisplay] = useState(false);
+
+    const selectedMenusButtonStyle = {
+        visibility: selectedItems.length < 4? 'hidden':'visible',
+        cursor: selectedItems.length < 4? 'none':'pointer'
+    };
 
     let totalPrice = 0;
 
@@ -11,14 +22,28 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
             totalPrice += (item.price * item.quantity);
         }
     )
+    
+    useEffect(
+        () => {
+            if(selectedItems.length < 4){
+                setIsDisplay(false);
+            } else {
+                setIsDisplay(true);
+            }
+        },
+        [selectedItems]
+    );
 
     return (
         <>
             <div className={style.SelectedMenusBox}>
                 <div className={style.Selected}>
                     <div className={style.TopBox}></div>
+                    <div className={style.LeftButton}>
+                        <img src="/images/왼쪽.png" onClick={() => setIsDisplay(false)} className={style.LeftButtonStyle} style={selectedMenusButtonStyle}/>
+                    </div>
                     <div className={style.Display}>
-                        {selectedItems.map(
+                        {selectedItems.slice(isDisplay * 3, (isDisplay + 1) * 3).map(
                             selectedItem =>
                                 <Selected
                                     key={selectedItem.menuCode}
@@ -30,11 +55,17 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
                                 />
                         )}
                     </div>
+                    <div className={style.RightButton}>
+                        <img src="/images/오른쪽.png" onClick={() => setIsDisplay(true)} className={style.RightButtonStyle} style={selectedMenusButtonStyle}/>
+                    </div>
+                    <div className={style.DisplayButton}>
+                        <SelectedMenusButton selectedItems={selectedItems} isDisplay={isDisplay}/>
+                    </div>
                 </div>
-                <div className={style.BottomBox}>
-                    <p className={style.FrontText}>내실 돈 : </p>
-                    <p className={style.NextText}>{totalPrice? `${parseInt(totalPrice / 1000)},`:"" }{totalPrice? ((totalPrice % 1000)? totalPrice % 1000: "000"): "0"}원</p>
-                </div>
+            </div>
+            <div className={style.BottomBox}>
+                <p className={style.FrontText}>내실 돈 : </p>
+                <p className={style.NextText}>{totalPrice? `${parseInt(totalPrice / 1000)},`:"" }{totalPrice? ((totalPrice % 1000)? totalPrice % 1000: "000"): "0"}원</p>
             </div>
         </>
     );

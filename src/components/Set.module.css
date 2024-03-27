@@ -1,0 +1,51 @@
+.Set {
+    width: 300px;
+    height: 100px;
+    margin: auto;
+}
+
+.SetBox {
+    width: 90px;
+    height: 80px;
+    border: 3px solid rgba(255, 184, 0, 1);
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.AddBox {
+    width: 590px;
+    height: 330px;
+    margin: auto;
+}
+
+.NameBox {
+    width: 580px;
+    height: 30px;
+    background-color: rgba(58, 1, 0, 1);
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.ItemBox {
+    width: 570px;
+    height: 130px;
+    margin-left: 12px;
+}
+
+.SideButton {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.Polygon {
+    margin-bottom: 40px;
+}

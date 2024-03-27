@@ -6,7 +6,7 @@ import MenuBlock from "../components/MenuBlock";
 
 import style from "./Menus.module.css";
 
-function SetMenus({selectedItems, setSelectedItems, change, setChange}) {
+function SetMenus({ selectedItems, setSelectedItems, change, setChange }) {
 
     const [setMenuList, setSetMenuList] = useState([]);
     const [page, setPage] = useState(1);
@@ -43,7 +43,7 @@ function SetMenus({selectedItems, setSelectedItems, change, setChange}) {
             <div className={style.allBox}>
                 <div className={style.Box}>
                     {getMenu().map(
-                        product => 
+                        product => !product.empty &&
                             <MenuBlock
                                 key={product.menuCode}
                                 item={product}
@@ -56,13 +56,13 @@ function SetMenus({selectedItems, setSelectedItems, change, setChange}) {
                 )}
                 <div className={style.pagenation}>
                     {Array.from({ length: Math.ceil(setMenuList.length / onePageSixMenus) }, (_, index) => (
-                                    <button
-                                        key={index}
-                                        className={page === index + 1 ? style.buttonActive : style.pagebutton}
-                                        onClick={() => pageChange(index + 1)}
-                                    >
-                                        {index + 1}
-                                    </button>
+                        <button
+                            key={index}
+                            className={page === index + 1 ? style.buttonActive : style.pagebutton}
+                            onClick={() => pageChange(index + 1)}
+                        >
+                            {index + 1}
+                        </button>
                     ))}
                 </div>
 

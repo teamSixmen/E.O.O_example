@@ -1,0 +1,88 @@
+.Container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Content {
+    width: 600px;
+    height: 740px;
+    padding: 15px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 1);
+    border: 10px double black;
+    border-radius: 10px;
+}
+
+.Outer {
+    width: 600px;
+    height: 150px;
+}
+
+.Picture {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.Text {
+    width: 440px;
+    height: 150px;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.Button {
+    width: 18px;
+    height: 18px;
+    background-color: rgba(255, 97, 116, 1);
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
+    line-height: 12px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.Descript {
+    width: 580px;
+    height: 70px;
+    clear: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Add {
+    width: 600px;
+    height: 440px;
+    margin: auto;
+}
+
+.ButtonBox {
+    width: 600px;
+    height: 60px;
+    text-align: center;
+}
+
+.SquareBox {
+    width: 200px;
+    height: 40px;
+    border: 5px solid rgba(255, 184, 0, 1);
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 130%;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}

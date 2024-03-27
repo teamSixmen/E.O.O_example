@@ -1,11 +1,11 @@
-.allBox {
+/* .allBox {
     width: 768px;
     height: 548px;
     display: flex;
-}
+} */
 
 .Box {
-    width: 665px;
+    width: 625px;
     height: 476px;
     /* position: absolute; */
     /* top: 439px; */
@@ -13,9 +13,9 @@
     background-color: rgba(243, 236, 236, 1);
     margin-top: -485px;
     margin-left: 80px;
+    padding-left: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
 
 }
@@ -40,7 +40,7 @@
 
 .buttonActive {
     
-    margin-right: 5px;
+    margin-right: 10px;
     border: 1px double #ccc;
     border-radius: 50px;
     background-color: #ffb800;

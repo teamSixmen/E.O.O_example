@@ -38,11 +38,11 @@
     justify-content: center;
     display: inline-block;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 25px;
     margin-left: 20px;
+    margin-right: 5px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 20px;
 }
 
 .Home {

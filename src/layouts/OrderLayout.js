@@ -1,24 +1,19 @@
 import Header from "../components/Header";
+import SelectedMenus from "../components/SelectedMenus";
 import SelectPayment from "../components/SelectPayment";
 import Footer from "../components/Footer";
-import OrderMenus from "../components/SelectedMenus";
 
-import style from "./Layouts.module.css";
-
-function OrderLayout({ here, setHere, selectedItems, setSelectedItems, change, setChange}) {
+function OrderLayout({ here, setHere, selectedItems, setSelectedItems }) {
 
     return (
         <>
             <Header
                 here={here}
                 setHere={setHere}
-                setSelectedItems={setSelectedItems}
             />
-            <OrderMenus
+            <SelectedMenus
                 selectedItems={selectedItems}
                 setSelectedItems={setSelectedItems}
-                change={change}
-                setChange={setChange}
             />
             <SelectPayment/>
             <Footer/>
