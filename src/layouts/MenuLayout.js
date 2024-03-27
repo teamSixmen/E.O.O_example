@@ -15,7 +15,6 @@ function MenuLayout({ here, setHere, selectedItems, setSelectedItems, change, se
             <Header
                 here={here}
                 setHere={setHere}
-                setSelectedItems={setSelectedItems}
             />
             <SelectedMenus
                 selectedItems={selectedItems}

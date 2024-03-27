@@ -12,7 +12,6 @@ function OrderLayout({ here, setHere, selectedItems, setSelectedItems, change, s
             <Header
                 here={here}
                 setHere={setHere}
-                setSelectedItems={setSelectedItems}
             />
             <OrderMenus
                 selectedItems={selectedItems}
