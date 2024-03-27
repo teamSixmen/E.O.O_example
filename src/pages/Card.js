@@ -12,7 +12,7 @@ function Card() {
         () => {
             const timer = setInterval(() => {
                 navigate("/receipt");
-            }, 1000);
+            }, 15000);
 
             return () => {
                 clearInterval(timer);

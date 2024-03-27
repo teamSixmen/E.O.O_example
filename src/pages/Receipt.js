@@ -70,7 +70,7 @@ function Receipt({here, selectedItems, waitingNum, setWaitingNum}) {
                     <h2>합계 금액 : {parseInt(totalPrice / 1000)},{(totalPrice % 1000)? totalPrice % 1000:"000"}</h2>
                     <h3>{here? "매장":"포장"}</h3>
                     <h2>대기순번 : {waitingNum} </h2>
-                    {/* <Timer/> */}
+                    <Timer/>
                     <div 
                         className={style.Home}
                     ><h3>화면을 터치하세요!</h3></div>
