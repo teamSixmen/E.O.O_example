@@ -38,7 +38,7 @@ function SelectedMenus({ selectedItems, setSelectedItems }) {
         <>
             <div className={style.SelectedMenusBox}>
                 <div className={style.Selected}>
-                    <div className={style.TopBox}></div>
+                    <div className={style.TopBox}>선택된 메뉴</div>
                     <div className={style.LeftButton}>
                         <img src="/images/왼쪽.png" onClick={() => setIsDisplay(false)} className={style.LeftButtonStyle} style={selectedMenusButtonStyle}/>
                     </div>
