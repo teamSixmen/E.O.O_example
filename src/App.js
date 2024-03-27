@@ -16,8 +16,10 @@ import Card from "./pages/Card";
 import AppCard from "./pages/AppCard";
 import Receipt from "./pages/Receipt";
 import Help from "./pages/Help";
+import SelectAppCard from "./components/SelectAppCard";
 
 import style from './App.module.css';
+import QrBar from "./pages/QrBar";
 
 function App() {
 
@@ -99,6 +101,7 @@ function App() {
               />}>
                 <Route index element={<Card/>}/>
                 <Route path="card" element={<Card/>}/>
+                <Route path="selectapp" element={<SelectAppCard/>}/>
                 <Route path="appcard" element={<AppCard/>}/>
               </Route>
               <Route path="receipt" element={<StandardLayout

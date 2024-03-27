@@ -23,9 +23,15 @@ function AppCard() {
 
     return (
         <>
-            <div className={style.Back}>
-                <div className={style.AppBlank}></div>
-                <img src="/images/temp.jpg" width="400px"/>
+            <div className={style.baegyung}>
+                <div className={style.노랑바}>
+                    <h1 className={style.큐알바코드}>QR / 바코드 결제</h1>
+                </div>
+                <div className={style.큐알바정렬}>
+                <img src="../images/qr코드.png" className={style.QR}/>
+                <img src="../images/바코드.png" className={style.BAR}/>
+                
+                </div>
                 <h1>QR 또는 바코드 스캔을 진행해주세요</h1>
             </div>
         </>

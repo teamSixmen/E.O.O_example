@@ -1,9 +1,58 @@
 .Back {
     background-color: rgba(241, 241, 241, 1);
     width: 768px;
-    height: 810px;
+    height: 1024px;
     text-align: center;
 }
+.baegyung {
+    width: 768px;
+    height: 749px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.큐알바코드{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.큐알바정렬{
+    display: flex;
+    margin-top:160px;
+}
+.바결제{
+    text-align: center;
+    
+}
+.QR {
+    width: 212px;
+    height: 283px;
+    display: flex;
+   
+    
+}
+
+.BAR{
+    width: 358px;
+    height: 283px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.노랑바 {
+    width: 768px;
+    height: 60px;
+    background-color: #FFB800;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+}
+
 
 .CardBlank {
     width: 10px;
