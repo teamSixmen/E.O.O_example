@@ -5,18 +5,25 @@
 }
 
 .Blank {
-    width: 525px;
-    /* display: inline-block; */
+    width: 505px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+    margin-left: 95px;
+    border: 5px solid orange;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Button {
-    width: 220px;
+    width: 200px;
     height: 50px;
     background-color: rgba(255, 184, 0, 1);
     text-align: center;
     font-size: 150%;
     font-weight: bold;
     line-height: 60px;
+    margin-right: 23px;
     display: flex;
     justify-content: center;
     align-items: center;

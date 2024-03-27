@@ -59,14 +59,16 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                      "price": product.price,
                      "image":product.detail.image,
                      "quantity": count}];
+
                      setSelectedItems(changedItems);
                      setChange(!change);
                     } else if (isSet) {
                         const changedItems = [...selectedItems,
                             {"menuCode": product.menuCode * 100 + ((addSide - 401) * 10) + (addDrink - 501),
-                            "menuName": product.menuName.concat("세트(", (addSide - 401), (addDrink - 501),")"),
+                            "menuName": product.menuName.concat("\n세트(", (addSide - 401), (addDrink - 501),")"),
                             "price": product.price + sideMenus[sideIndex].price + drinkMenus[drinkIndex].price - 500,
                             "image":product.detail.image,
+
                     "quantity": count}];
                 setSelectedItems(changedItems);
                 setChange(!change);
