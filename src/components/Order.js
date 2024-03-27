@@ -1,3 +1,4 @@
+import Weather from "./Weather";
 import { useNavigate } from "react-router-dom";
 
 import style from "./Order.module.css";
@@ -14,7 +15,9 @@ function Order({ selectedItems }) {
     return (
         <>
             <div className={style.Box}>
-                <div className={style.Blank}></div>
+                <div className={style.Blank}>
+                    <Weather/>
+                </div>
                 <div
                     onClick={onClickHander}
                     className={style.Button}
