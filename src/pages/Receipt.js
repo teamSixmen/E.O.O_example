@@ -52,11 +52,11 @@ function Receipt({here, selectedItems, waitingNum, setWaitingNum}) {
                     className={style.Receipt}
                     onClick={() => navigate("/")}
                 >
+                    <p className={style.RecepitTextBlank}> </p><br/>
                     <p className={style.ReceiptTextName}>품목명</p>
                     <p className={style.ReceiptTextPrice}>단가</p>
                     <p className={style.ReceiptTextQuantity}>수량</p>
                     <p className={style.ReceiptTextSum}>금액</p>
-                    <p className={style.RecepitTextBlank}> </p><br/>
                     <div>
                         {sortedItems.map(
                             sortedItem =>

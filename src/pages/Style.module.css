@@ -1,7 +1,7 @@
 .Back {
     background-color: rgba(241, 241, 241, 1);
     width: 768px;
-    height: 1024px;
+    height: 810px;
     text-align: center;
 }
 .baegyung {
@@ -65,7 +65,7 @@
 }
 
 .Blank {
-    height: 50px;
+    height: 25px;
 }
 
 .Receipt {
@@ -75,7 +75,7 @@
     margin-left: 159px;
     cursor: pointer;
     position: absolute;
-    line-height: 12px;
+    line-height: 10px;
 }
 
 .ReceiptTextName {
@@ -118,7 +118,7 @@
     background-color: rgba(226, 215, 215, 1);
     line-height: 85px;
     margin-left: 65px;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
 }
 
 .직원호출 {

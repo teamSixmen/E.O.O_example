@@ -63,7 +63,7 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                 } else if (isSet) {
                     const changedItems = [...selectedItems,
                     {"menuCode": product.menuCode * 100 + ((addSide - 401) * 10) + (addDrink - 501),
-                    "menuName": product.menuName.concat("세트(", (addSide - 401), (addDrink - 501),")"),
+                    "menuName": product.menuName.concat("\n세트(", (addSide - 401), (addDrink - 501),")"),
                     "price": product.price + sideMenus[sideIndex].price + drinkMenus[drinkIndex].price - 500,
                     "quantity": count}];
                 setSelectedItems(changedItems);
