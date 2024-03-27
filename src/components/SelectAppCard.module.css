@@ -1,0 +1,247 @@
+.background{
+    width: 768px;
+    height: 800px;
+    background-color: white; 
+    display:flex;
+    flex-wrap: wrap;
+    
+   
+    
+}
+
+.네이버페이 {
+    width: 155px;
+    height: 205px;
+    margin-top: 25px;
+    margin-left: 65px;
+  
+}
+
+.네이버사진 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin-top: 80px;
+}
+
+.np {
+   
+    border:3px solid;
+    width:149px;  
+    height: 41px;
+    text-align: center;
+    background-color: #00C73C;
+    border-radius: 30px;
+    color:white;
+    font-weight: 600;
+    font-size: 120%;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.카카오페이{
+    width: 155px;
+    height: 205px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-left: 85px;
+}
+
+.카카오사진{
+    width: 150px;
+    height: 150px;
+    margin-top: 80px;
+    
+}
+.kp{
+    border:3px solid;
+    width:149px;  
+    height: 41px;
+    text-align: center;
+    background-color: #F4DC34;
+    border-radius: 30px;
+    color:white;
+    font-weight: 600;
+    font-size: 120%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.제로페이{
+    width: 155px;
+    height: 205px;
+    margin-top: 25px;
+    margin-left: 85px;
+    
+}
+
+.제로사진{
+    width: 150px;
+    height: 150px;
+    margin-top: 80px;
+    
+}
+.zp{
+    border:3px solid;
+    width:149px;  
+    height: 41px;
+    text-align: center;
+    font-weight: 600;
+    background: #C7348B;
+    border-radius: 30px;
+    font-size: 120%;
+    color:white;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.페이코{
+    width: 155px;
+    height: 205px;
+    margin-top: 25px;
+    margin-left: 65px;
+    
+}
+
+.페이코사진{
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+   
+}
+.pp {
+    
+    border:3px solid;
+    width:149px;  
+    height: 41px;
+    text-align: center;
+    font-weight: 600;
+    background: #FA2829;
+    border-radius: 30px;
+    color:white;
+    font-weight: 600;
+    font-size: 120%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.삼성페이{
+    width: 155px;
+    height: 205px;
+    margin-top: 25px;
+    margin-left: 85px;
+    
+}
+.삼성사진{
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+   
+}
+.sp{
+    border:3px solid;
+    width:149px;  
+    height: 41px;
+    text-align: center;
+    font-weight: 600;
+    background: #024CA1;
+    border-radius: 30px;
+    color:white;
+    font-weight: 600;
+    font-size: 120%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.애플페이{
+    width: 155px;
+    height: 205px;
+    margin-top: 25px;
+    margin-left: 85px;
+    
+}
+
+.애플사진{
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+    
+}
+.ap {
+    border:3px;
+    width:149px;  
+    height: 41px;
+    text-align: center;
+    font-weight: 600;
+    background: #000000;
+    font-display: white;
+    line-height: 60px;
+    border-radius: 30px;
+    color:white;
+    font-weight: 600;
+    font-size: 120%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.뒤로가기 {
+    width: 200px;
+    height:100px;
+    margin-bottom:30px;
+    margin-left:520px;
+    font-size: 100%;
+    text-align: center;
+    font-weight: 600;
+    background: #3A0100;
+    border-radius: 30px;
+    color:#FFB800;
+    font-weight: 600;
+    font-size: 120%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.back {
+    font-size: 100%;
+    font-weight: 400;;
+    border:3px solid;
+    width: 70px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+    background-color: white;
+    
+}
+.옐로바 {
+    width: 768px;
+    height: 60px;
+    background-color: #FFB800;
+    font-size: 170%;
+    font-weight: 600;
+    display: flex;
+    
+}
+.앱카드결제 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-left: 315px;
+}

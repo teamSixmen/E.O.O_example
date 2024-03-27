@@ -1,0 +1,15 @@
+.Qr {
+    background-color: rgba(241, 241, 241, 1);
+    width: 768px;
+    height: 810px;
+    text-align: center;
+}
+.바코드 {
+    width: 200px;
+    height:250px;
+}
+
+.QR코드 {
+    width:200px;
+    height:250px;
+}
