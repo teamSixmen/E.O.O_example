@@ -74,8 +74,9 @@
 
 .FrontText {
     display: inline-block;
-    /* position: absolute; */
-    margin-right: 50px;
+    position: absolute;
+    right: 170px
+    /* margin-right: 80px; */
 }
 
 .NextText {

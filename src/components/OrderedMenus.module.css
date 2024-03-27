@@ -1,35 +1,68 @@
 .ReceiptBox {
     display: flex;
+    height: 40px;
 
 }
 
 .ReceiptTextName {
     position: absolute;
-    /* left: 185px; */
-    margin-left: 20px;
+    left: 15px;
+    line-height: 20px;
+    width: 160px;
+    height: 40px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .ReceiptTextPrice {
     display: inline-block;
-    position: relative;
-    left: 230px;
-
+    position: absolute;
+    left: 200px;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
+    
 }
 
 .ReceiptTextQuantity {
     display: inline-block;
-    position: relative;
-    left: 245px;
-    margin-left: 30px;
+    position: absolute;
+    left: 290px;
+    width:30px;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
 }
 
 .ReceiptTextSum {
     display: inline-block;
-    position: relative;
-    left: 260px;
-    margin-left: 30px;
+    position: absolute;
+    left: 350px;
+    width:60px;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
 }
 
 .ReceiptTextBlank {
     display: inline-block;
+    height:15px;
+}
+
+.hrstyle {
+    border: 1px dotted lightgray;
+    width: 90%;
+    margin: 5px;
+    margin-left: 5%
+
 }
