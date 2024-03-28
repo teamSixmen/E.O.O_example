@@ -102,7 +102,7 @@ function App() {
                 <Route index element={<Card/>}/>
                 <Route path="card" element={<Card/>}/>
                 <Route path="appcard" element={<SelectAppCard/>}/>
-                <Route path="appcard" element={<AppCard/>}/>
+                <Route path="qrBar" element={<AppCard/>}/>
               </Route>
               <Route path="receipt" element={<StandardLayout
                 here={here}

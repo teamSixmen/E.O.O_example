@@ -9,7 +9,7 @@ function SelectApp () {
   
   const navigate = useNavigate();
 
-    const onClickNextStage = () => {navigate("/receipt")};
+    const onClickNextStage = () => {navigate("/pay/qrBar")};
 
     const onClickgoback = () => {navigate("/order")}
       
