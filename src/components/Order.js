@@ -9,7 +9,7 @@ function Order({ selectedItems }) {
     
     const onClickHander = () => {
     
-        (selectedItems.length)? navigate("/order"):alert("shoping list is empty");
+        (selectedItems.length)? navigate("/order"):alert("선택된 메뉴가 없습니다.");
     }
 
     return (

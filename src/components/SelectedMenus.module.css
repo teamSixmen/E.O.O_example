@@ -76,6 +76,22 @@
     line-height: 5px;
 }
 
+.CancelButton {
+    width: 90px;
+    height: 30px;
+    background-color: red;
+    border-radius: 10px;;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    line-height: 33px;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 7px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
 .FrontText {
     display: inline-block;
     position: absolute;
