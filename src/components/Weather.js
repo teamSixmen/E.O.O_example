@@ -25,6 +25,7 @@ function Weather(){
                 fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${coords.latitude}&lon=${coords.longitude}&appid=${API_KEY}`)
                     .then(response=>response.json())
                     .then(json => {
+                        console.log(json);
                         setCityName(json.name);
                         setWeather(json.weather[0]);
                         setTemp(json.main.temp);
@@ -46,6 +47,7 @@ function Weather(){
                     { weather.main === 'Clouds' && <><label>구름</label></> }
                     { weather.main === 'Rain' && <><label>비</label></> }
                     { weather.main === 'Snow' && <label>눈</label> }
+                    { weather.main === 'Mist' && <label>안개</label> }
                 </div>
                 <div className={weatherStyle.온도}>
                     <img src="/images/온도계.png" />
