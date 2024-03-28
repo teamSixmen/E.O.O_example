@@ -13,7 +13,6 @@ function Weather(){
     useEffect(
         () => {
             new Promise((resolve,reject) =>{
-                console.log('마운트 시점에 실행되나?');
                 navigator.geolocation.getCurrentPosition(currentPosition =>{
                     setPosition({
                         longitude : currentPosition.coords.longitude,
@@ -26,9 +25,7 @@ function Weather(){
                 fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${coords.latitude}&lon=${coords.longitude}&appid=${API_KEY}`)
                     .then(response=>response.json())
                     .then(json => {
-                        if(json.name === 'Banpobondong' || 'Jamwon-dong') {
-                            setCityName('서울시 서초구 서초동');
-                        }
+                        setCityName(json.name);
                         setWeather(json.weather[0]);
                         setTemp(json.main.temp);
                     });
@@ -39,22 +36,22 @@ function Weather(){
 
     return (
         <>
-            <div style={{display:'inline-block'}}>
-                <img src="/images/위치1.png" style={{width:'14px',marginLeft:'25px',marginTop:'13px',marginRight:'8px'}}/>
+            <div className={weatherStyle.WeatherImg}>
+                <img src="/images/위치1.png" style={{width:'14px', marginTop:'13px', marginLeft:'20px',paddingLeft:'10px'}}/>
             </div>
             <div className={weatherStyle.WeatherInfo}>
-                <label>{`${cityName}`}</label>
+                {`${cityName}`}
             </div>
-            <div style={{display:'inline-block'}}>
-                <img width='40px' src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}/>
+            <div className={weatherStyle.WeatherImg}>
+                <img style={{width:'40px',marginRight:'-8px',paddingLeft:'60px'}} src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}/>
             </div>
             <div className={weatherStyle.WeatherInfo}>
-                { weather.main === 'Clouds' && <><label>&nbsp;구름</label></> }
-                { weather.main === 'rain' && <><label>&nbsp;비</label></> }
-                { weather.main === 'snow' && <label>&nbsp;눈</label> }
+                { weather.main === 'Clouds' && <><label>구름</label></> }
+                { weather.main === 'Rain' && <><label>비</label></> }
+                { weather.main === 'Snow' && <label>눈</label> }
             </div>
-            <div style={{display:'inline-block'}}>
-                <img src="/images/온도계.png" style={{width:'25px', marginLeft:'25px',marginTop:'7px'}}/>
+            <div className={weatherStyle.WeatherImg}>
+                <img src="/images/온도계.png" style={{width:'25px', marginTop:'7px',marginRight:'-7px'}}/>
             </div>
             <div className={weatherStyle.WeatherInfo}>
                 {(temp-273.15).toFixed(1)}°C
