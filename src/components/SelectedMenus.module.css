@@ -6,32 +6,31 @@
 
 .TopBox {
     width: 768px;
-    height: 45px;
+    height: 32px;
     background-color: rgba(58, 1, 0, 1);
     color: white;
     text-align: center;
-    line-height: 45px;
-    font-size: 130%;
+    line-height: 32px;
+    font-size: 110%;
 }
 
 .Selected {
     width: 768px;
-    height: 210px;
+    height: 230px;
     justify-content: center;
-    display: inline-block;
 }
 
 .Display {
-    width: 670px;
+    width: 650px;
     height: 150px;
-    margin-top: 5px;
-    margin-left: 50px;
-    overflow-y: hidden;
+    margin-top: 20px;
+    margin-left: 85px;
     display: inline-block;
 }
 
-.DisplayButton {
+.DisplayButton{
     text-align: center;
+    margin-top: 5px;
 }
 
 .SelectedButton {
@@ -56,13 +55,13 @@
 
 .LeftButton {
     position: absolute;
-    top: 290px;
+    top: 280px;
     margin-left: 20px;
 }
 
 .RightButton{
     position: absolute;
-    top: 290px;
+    top: 280px;
     display: inline-block;
 }
 
@@ -79,12 +78,12 @@
 .CancelButton {
     width: 90px;
     height: 30px;
-    background-color: red;
-    border-radius: 10px;;
+    background-color: rgb(253, 25, 25);
+    border-radius: 5px;
     display: inline-block;
     position: absolute;
     left: 10px;
-    line-height: 33px;
+    line-height: 30px;
     text-align: center;
     font-size: 80%;
     margin-top: 7px;
