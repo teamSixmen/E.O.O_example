@@ -2,6 +2,7 @@
     width: 768px;
     height: 50px;
     display: flex;
+    align-items: center;
 }
 
 .Blank {
@@ -10,10 +11,14 @@
     font-size: 15px;
     line-height: 40px;
     margin-left: 50px;
-    border: 5px solid orange;
-    border-radius: 20px;
     display: flex;
     justify-content: space-around;
+}
+
+.WeatherBox{
+    border: 3px solid  rgba(255, 184, 0, 1);
+    border-radius: 25px;
+    width: 450px;
 }
 
 .Button {
