@@ -5,7 +5,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -13,6 +12,7 @@
     width: 600px;
     padding: 15px;
     margin: auto;
+    margin-top: 150px;
     background-color: rgba(255, 255, 255, 1);
     border: 10px double black;
     border-radius: 10px;
@@ -53,15 +53,19 @@
 
 .Descript {
     width: 580px;
-    height: 70px;
-    clear: left;
+    height: auto;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-bottom: 5px;
+    border: 3px solid rgb(250, 200, 107);
+    background-color: rgb(253, 233, 195);
+    border-radius: 20px;
+    clear: left;
 }
 
 .Add {
     width: 600px;
     margin: auto;
+    margin-top: 10px;
 }
 
 .ButtonBox {
