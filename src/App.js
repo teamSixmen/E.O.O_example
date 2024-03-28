@@ -101,7 +101,7 @@ function App() {
               />}>
                 <Route index element={<Card/>}/>
                 <Route path="card" element={<Card/>}/>
-                <Route path="selectapp" element={<SelectAppCard/>}/>
+                <Route path="appcard" element={<SelectAppCard/>}/>
                 <Route path="appcard" element={<AppCard/>}/>
               </Route>
               <Route path="receipt" element={<StandardLayout

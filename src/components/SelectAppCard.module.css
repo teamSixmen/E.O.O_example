@@ -1,20 +1,16 @@
 .background{
     width: 768px;
     height: 800px;
-    background-color: white; 
+    background-color: white;
     display:flex;
     flex-wrap: wrap;
-    
-   
-    
 }
 
 .네이버페이 {
     width: 155px;
     height: 205px;
-    margin-top: 25px;
     margin-left: 65px;
-  
+    cursor: pointer;
 }
 
 .네이버사진 {
@@ -22,6 +18,7 @@
     height: 150px;
     display: flex;
     margin-top: 80px;
+    border-radius: 15px;
 }
 
 .np {
@@ -44,17 +41,15 @@
 .카카오페이{
     width: 155px;
     height: 205px;
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-top: 25px;
     margin-left: 85px;
+    cursor: pointer;
 }
 
 .카카오사진{
     width: 150px;
     height: 150px;
     margin-top: 80px;
-    
+    border-radius: 15px;
 }
 .kp{
     border:3px solid;
@@ -75,16 +70,15 @@
 .제로페이{
     width: 155px;
     height: 205px;
-    margin-top: 25px;
     margin-left: 85px;
-    
+    cursor: pointer;
 }
 
 .제로사진{
     width: 150px;
     height: 150px;
     margin-top: 80px;
-    
+    border-radius: 15px;
 }
 .zp{
     border:3px solid;
@@ -106,16 +100,15 @@
 .페이코{
     width: 155px;
     height: 205px;
-    margin-top: 25px;
     margin-left: 65px;
-    
+    cursor: pointer;
 }
 
 .페이코사진{
     width: 150px;
     height: 150px;
-    margin-top: 40px;
-   
+    margin-top: 100px;
+    border-radius: 15px;
 }
 .pp {
     
@@ -138,15 +131,14 @@
 .삼성페이{
     width: 155px;
     height: 205px;
-    margin-top: 25px;
     margin-left: 85px;
-    
+    cursor: pointer;
 }
 .삼성사진{
     width: 150px;
     height: 150px;
-    margin-top: 40px;
-   
+    margin-top: 100px;
+    border-radius: 15px;
 }
 .sp{
     border:3px solid;
@@ -169,15 +161,14 @@
 .애플페이{
     width: 155px;
     height: 205px;
-    margin-top: 25px;
     margin-left: 85px;
-    
+    cursor: pointer;
 }
 
 .애플사진{
     width: 150px;
     height: 150px;
-    margin-top: 40px;
+    margin-top: 100px;
     
 }
 .ap {
@@ -199,23 +190,21 @@
     display: flex;
 }
 .뒤로가기 {
-    width: 200px;
-    height:100px;
-    margin-bottom:30px;
-    margin-left:520px;
+    width: 180px;
+    height: 80px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 530px;
     font-size: 100%;
     text-align: center;
     font-weight: 600;
-    background: #3A0100;
+    background: #FFB800;
     border-radius: 30px;
-    color:#FFB800;
-    font-weight: 600;
-    font-size: 120%;
-    margin-top: 10px;
+    color:#000000;
     justify-content: center;
     align-items: center;
     display: flex;
-    
+    cursor: pointer;
 }
 
 .back {
@@ -231,9 +220,10 @@
 }
 .옐로바 {
     width: 768px;
-    height: 60px;
-    background-color: #FFB800;
-    font-size: 170%;
+    height: 32px;
+    background-color: #3A0100;
+    color: white;
+    font-size: 110%;
     font-weight: 600;
     display: flex;
     

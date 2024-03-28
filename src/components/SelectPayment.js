@@ -12,7 +12,7 @@ function SelectPayment() {
 
     const onClickHandler = () => {
 
-        (checked === "card")? navigate("/pay/card"):navigate("/pay/selectapp")
+        (checked === "card")? navigate("/pay/card"):navigate("/pay/appcard")
         setChecked("card");
     };
     

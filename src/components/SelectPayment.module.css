@@ -17,14 +17,14 @@
 .CheckBox {
     border: 1px solid rgba(156, 156, 156, 1);
     border-radius: 30px;
-    width: 140px;
+    width: 150px;
     height: 130px;
     text-align: center;
     font-size: 120%;
     font-weight: bold;
     display: inline-block;
     padding: 30px;
-    margin-left: 40px;
+    margin-left: 33px;
     cursor: pointer;
 }
 
