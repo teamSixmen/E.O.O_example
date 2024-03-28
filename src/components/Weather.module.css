@@ -1,7 +1,44 @@
+.weatherBox {
+    width : 445px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.weatherBox img {
+    width: 25px;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.location {
+    width: 225px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    line-height: 16px;
+}
+
+.날씨 {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.날씨 img {
+    width: 40px;
+}
+
+.온도 {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
 .WeatherInfo{
-    width: 150px;
+    width: 100px;
     margin-left: 8px;
-    display:inline-block;
 }
 
 .WeatherImg{

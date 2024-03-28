@@ -16,7 +16,9 @@ function Order({ selectedItems }) {
         <>
             <div className={style.Box}>
                 <div className={style.Blank}>
-                    <Weather/>
+                    <div className={style.WeatherBox}>
+                        <Weather/>
+                    </div>
                 </div>
                 <div
                     onClick={onClickHander}

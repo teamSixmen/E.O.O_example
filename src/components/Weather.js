@@ -36,25 +36,21 @@ function Weather(){
 
     return (
         <>
-            <div className={weatherStyle.WeatherImg}>
-                <img src="/images/위치1.png" style={{width:'14px', marginTop:'13px', marginLeft:'20px',paddingLeft:'10px'}}/>
-            </div>
-            <div className={weatherStyle.WeatherInfo}>
-                {`${cityName}`}
-            </div>
-            <div className={weatherStyle.WeatherImg}>
-                <img style={{width:'40px',marginRight:'-8px',paddingLeft:'60px'}} src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}/>
-            </div>
-            <div className={weatherStyle.WeatherInfo}>
-                { weather.main === 'Clouds' && <><label>구름</label></> }
-                { weather.main === 'Rain' && <><label>비</label></> }
-                { weather.main === 'Snow' && <label>눈</label> }
-            </div>
-            <div className={weatherStyle.WeatherImg}>
-                <img src="/images/온도계.png" style={{width:'25px', marginTop:'7px',marginRight:'-7px'}}/>
-            </div>
-            <div className={weatherStyle.WeatherInfo}>
-                {(temp-273.15).toFixed(1)}°C
+            <div className={weatherStyle.weatherBox}>
+                <div className={weatherStyle.location}>
+                    <img src="/images/위치1.png" />
+                    {`${cityName}`}
+                </div>
+                <div className={weatherStyle.날씨}>
+                    <img src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}/>
+                    { weather.main === 'Clouds' && <><label>구름</label></> }
+                    { weather.main === 'Rain' && <><label>비</label></> }
+                    { weather.main === 'Snow' && <label>눈</label> }
+                </div>
+                <div className={weatherStyle.온도}>
+                    <img src="/images/온도계.png" />
+                    {(temp-273.15).toFixed(1)}°C
+                </div>
             </div>
         </>
     );
