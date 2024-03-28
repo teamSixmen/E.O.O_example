@@ -31,20 +31,21 @@
     width: 22px;
     height: 22px;
     margin-right: 10px;
-    border: 1px solid #ccc;
     border-radius: 50px;
+    border: 1px solid #ccc;
     background-color: #fff;
-    color: #fff;
+    color: #000000;
+    text-align: center;
     cursor: pointer;
 }
 
 .buttonActive {
-    
     margin-right: 10px;
-    border: 1px double #ccc;
     border-radius: 50px;
+    border: 1px double #ccc;
     background-color: #ffb800;
-    color: #ffb800;
+    color: #000000;
+    text-align: center;
     cursor: pointer;
 }
 
