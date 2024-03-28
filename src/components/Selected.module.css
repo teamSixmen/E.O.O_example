@@ -21,3 +21,16 @@
     margin: 5px;
     cursor: pointer;
 }
+
+.Cancel {
+    width: 45px;
+    height: 18px;
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    font-size: 80%;
+    line-height: 18px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}

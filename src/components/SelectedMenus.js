@@ -34,6 +34,11 @@ function SelectedMenus({ selectedItems, setSelectedItems }) {
         [selectedItems]
     );
 
+    const onClickHandler = () => {
+        alert("모든 메뉴 선택이 취소됩니다.")
+        setSelectedItems([])
+    }
+
     return (
         <>
             <div className={style.SelectedMenusBox}>
@@ -64,6 +69,7 @@ function SelectedMenus({ selectedItems, setSelectedItems }) {
                 </div>
             </div>
             <div className={style.BottomBox}>
+                <div className={style.CancelButton} onClick={onClickHandler}>전체 취소</div>
                 <p className={style.FrontText}>내실 돈 : </p>
                 <p className={style.NextText}>{totalPrice? `${parseInt(totalPrice / 1000)},`:"" }{totalPrice? ((totalPrice % 1000)? totalPrice % 1000: "000"): "0"}원</p>
             </div>
