@@ -56,7 +56,7 @@ function Selected({item, selectedItems, setSelectedItems, change, setChange }) {
                 >
                     -
                 </div>
-                수량 : {item.quantity} 
+                수량 : <span className={style.QuantityStyle}>{item.quantity}</span>
                 <div
                     onClick={onClickPlusButton}
                     className={style.Button}
