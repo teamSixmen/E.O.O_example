@@ -26,14 +26,14 @@
 .Picture {
     width: 150px;
     height: 150px;
+    margin-left: 80px;
     float: left;
 }
 
 .Text {
     width: 440px;
     height: 150px;
-    float: left;
-    margin-left: 5px;
+    margin-left: 80px;
     text-align: center;
 }
 
@@ -52,10 +52,14 @@
 }
 
 .Descript {
-    width: 580px;
+    width: 500px;
     height: auto;
-    padding-left: 10px;
-    padding-bottom: 5px;
+    text-align: center;
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
     border: 3px solid rgb(250, 200, 107);
     background-color: rgb(253, 233, 195);
     border-radius: 20px;
