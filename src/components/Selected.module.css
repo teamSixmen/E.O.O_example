@@ -12,15 +12,16 @@
 }
 
 .Button {
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
     background-color: rgba(255, 97, 116, 1);
     border-radius: 50%;
     color: white;
     font-weight: bold;
     font-size: 150%;
-    line-height: 12px;
+    line-height: 14px;
     display: inline-block;
+    text-align: center;
     margin: 5px;
     cursor: pointer;
 }
