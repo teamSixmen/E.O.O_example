@@ -1,11 +1,11 @@
 .OuterBox {
-    width: 265px;
+    width: 305px;
     margin: auto;
     text-align: center;
 }
 
 .WeatherBox {
-    width: 120px;
+    width: 160px;
     margin-right: 10px;
     display: inline-block;
 }
