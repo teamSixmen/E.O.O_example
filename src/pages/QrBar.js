@@ -14,7 +14,7 @@ function QrBar() {
         () => {
             const timer = setInterval(() => {
                 navigate("/receipt");
-            }, 10000);
+            }, 1000000);
 
             return () => {
                 clearInterval(timer);
@@ -29,11 +29,11 @@ function QrBar() {
                 <div className={style.옐로바}>QR / 바코드 결제</div>
                     <div className={style.정렬}>
                         <div className={style.Qr}>
-                            <img src="../images/qr코드.png"/>
+                            <img src="../images/QR코드2.png"/>
                             <p>QR 스캔</p>
                         </div>
                         <div className={style.BarCord}>
-                            <img src="../images/바코드.PNG"/>
+                            <img src="../images/바코드수정.PNG"/>
                             <p>바코드를 읽혀주세요.</p>
                         </div>
                     </div>
