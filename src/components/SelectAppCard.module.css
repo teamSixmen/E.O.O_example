@@ -1,197 +1,80 @@
 .background{
     width: 768px;
     height: 800px;
-    background-color: white;
-    display:flex;
-    flex-wrap: wrap;
+    background-color: rgba(241, 241, 241, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
-.네이버페이 {
+.구분 {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.틀 {
     width: 155px;
     height: 205px;
-    margin-left: 65px;
+    background: lightyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
     cursor: pointer;
 }
 
-.네이버사진 {
-    width: 150px;
-    height: 150px;
+.틀 img {
+    width: 149px;
+    height: 149px;
+    border-radius: 20px;
+}
+
+.틀 p {
+    width: 149px;
+    height: 41px;
+    border-radius: 20px;
+    color: white;
     display: flex;
-    margin-top: 80px;
-    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .np {
-   
-    border:3px solid;
-    width:149px;  
-    height: 41px;
-    text-align: center;
-    background-color: #00C73C;
-    border-radius: 30px;
-    color:white;
-    font-weight: 600;
-    font-size: 120%;
-    
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    background: #00c73c;
 }
 
-.카카오페이{
-    width: 155px;
-    height: 205px;
-    margin-left: 85px;
-    cursor: pointer;
+.kp {
+    background: #f4dc34;
 }
 
-.카카오사진{
-    width: 150px;
-    height: 150px;
-    margin-top: 80px;
-    border-radius: 15px;
-}
-.kp{
-    border:3px solid;
-    width:149px;  
-    height: 41px;
-    text-align: center;
-    background-color: #F4DC34;
-    border-radius: 30px;
-    color:white;
-    font-weight: 600;
-    font-size: 120%;
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.zp {
+    background: #c7348b;
 }
 
-.제로페이{
-    width: 155px;
-    height: 205px;
-    margin-left: 85px;
-    cursor: pointer;
-}
-
-.제로사진{
-    width: 150px;
-    height: 150px;
-    margin-top: 80px;
-    border-radius: 15px;
-}
-.zp{
-    border:3px solid;
-    width:149px;  
-    height: 41px;
-    text-align: center;
-    font-weight: 600;
-    background: #C7348B;
-    border-radius: 30px;
-    font-size: 120%;
-    color:white;
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
-}
-
-.페이코{
-    width: 155px;
-    height: 205px;
-    margin-left: 65px;
-    cursor: pointer;
-}
-
-.페이코사진{
-    width: 150px;
-    height: 150px;
-    margin-top: 100px;
-    border-radius: 15px;
-}
 .pp {
-    
-    border:3px solid;
-    width:149px;  
-    height: 41px;
-    text-align: center;
-    font-weight: 600;
-    background: #FA2829;
-    border-radius: 30px;
-    color:white;
-    font-weight: 600;
-    font-size: 120%;
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    background: #fa2829;
 }
 
-.삼성페이{
-    width: 155px;
-    height: 205px;
-    margin-left: 85px;
-    cursor: pointer;
-}
-.삼성사진{
-    width: 150px;
-    height: 150px;
-    margin-top: 100px;
-    border-radius: 15px;
-}
-.sp{
-    border:3px solid;
-    width:149px;  
-    height: 41px;
-    text-align: center;
-    font-weight: 600;
-    background: #024CA1;
-    border-radius: 30px;
-    color:white;
-    font-weight: 600;
-    font-size: 120%;
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
+.sp {
+    background: #024ca1;
 }
 
-.애플페이{
-    width: 155px;
-    height: 205px;
-    margin-left: 85px;
-    cursor: pointer;
-}
-
-.애플사진{
-    width: 150px;
-    height: 150px;
-    margin-top: 100px;
-    
-}
 .ap {
-    border:3px;
-    width:149px;  
-    height: 41px;
-    text-align: center;
-    font-weight: 600;
-    background: #000000;
-    font-display: white;
-    line-height: 60px;
-    border-radius: 30px;
-    color:white;
-    font-weight: 600;
-    font-size: 120%;
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    background-color: #000000;
 }
+
+
 .뒤로가기 {
     width: 180px;
-    height: 80px;
+    height: 50px;
     margin-top: 100px;
     margin-bottom: 30px;
     margin-left: 530px;
@@ -215,23 +98,20 @@
     font-weight: 300;
     text-align: center;
     margin-top: 10px;
-    background-color: white;
-    
+    background-color: rgba(241, 241, 241, 1);
 }
 .옐로바 {
     width: 768px;
-    height: 32px;
+    height: 60px;
     background-color: #3A0100;
     color: white;
-    font-size: 110%;
+    font-size: 160%;
     font-weight: 600;
     display: flex;
-    
-}
-.앱카드결제 {
     justify-content: center;
     align-items: center;
-    display: flex;
-    text-align: center;
-    margin-left: 315px;
+}
+
+.BottomBox {
+    background: rgba(241, 241, 241, 1);
 }

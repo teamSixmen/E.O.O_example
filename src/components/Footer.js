@@ -38,7 +38,7 @@ function Footer() {
                     </div>
                     <div className={style.단계}>
                         <p>결제</p>
-                        <div className={ pathname === '/pay/card' || pathname === '/pay/appcard' ?
+                        <div className={ pathname === '/pay/card' || pathname === '/pay/appcard' || pathname === '/pay/qrBar'?
                                         style.주황 : style.회색}></div>
                     </div>
                     <div className={style.단계}>

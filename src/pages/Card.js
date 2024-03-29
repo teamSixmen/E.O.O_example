@@ -12,7 +12,7 @@ function Card() {
         () => {
             const timer = setInterval(() => {
                 navigate("/receipt");
-            }, 15000);
+            }, 10000);
 
             return () => {
                 clearInterval(timer);
@@ -24,6 +24,7 @@ function Card() {
     return (
         <>
             <div className={style.Back}>
+                <div className={style.옐로바}>신용/체크카드 결제</div>
                 <div className={style.CardBlank}></div>
                 <img src="/images/카드삽입.gif" width="400px" height="400px"/>
                 <h1>카드를 넣어주세요</h1>
