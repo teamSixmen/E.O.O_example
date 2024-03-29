@@ -65,7 +65,7 @@ function Advertise ({ menu, isSet, position, recommend, setRecommend }) {
                 <div className={style.OuterBox}>
                     <div className={style.WeatherBox}>
                         현재 날씨: 흐림<br/>
-                        <img src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}/><br/>
+                        <img className={style.흐림} src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`} /><br/>
                     </div>
                     <div className={style.RecomBox}>
                         추천 음료<br/>

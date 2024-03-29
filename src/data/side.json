@@ -6,7 +6,7 @@
         "isOrderable" : true,
         "price" : 3900,
         "detail" : {
-            "description" : "바삭한 김말이 쫄깃한 떡 강정과 팝콘만두를 갈릭 소스에 버무려 맵지 않게 즐기는 갈릭김떡만",
+            "description" : "바삭한 김말이 쫄깃한 떡 강정과\n팝콘만두를 갈릭 소스에 버무려 맵지 않게 즐기는 갈릭김떡만",
             "image" : "/images/sidemenu/갈릭김떡만.png"
         }
     },
@@ -17,7 +17,7 @@
         "isOrderable" : true,
         "price" : 2900,
         "detail" : {
-            "description" : "꿀꽈배기 꿀과 꽈배기가 만났다! 부드러운 크림치즈와 꿀꽈배기의 아카시아꿀로 더욱 부드러워진 꽈배기 스낵",
+            "description" : "꿀꽈배기 꿀과 꽈배기가 만났다!\n부드러운 크림치즈와 꿀꽈배기의 아카시아꿀로 더욱 부드러워진 꽈배기 스낵",
             "image" : "/images/sidemenu/꿀꽈배기크림치즈.png"
         }
     },
@@ -28,7 +28,7 @@
         "isOrderable" : true,
         "price" : 4100,
         "detail" : {
-            "description" : "바삭한 김말이 쫄깃한 떡 강정과 팝콘만두를 매콤한 소스에 맛있게 버무린 매콤김떡만",
+            "description" : "바삭한 김말이 쫄깃한 떡 강정과\n팝콘만두를 매콤한 소스에 맛있게 버무린 매콤김떡만",
             "image" : "/images/sidemenu/매콤김떡만.png"
         }
     },
@@ -94,7 +94,7 @@
         "isOrderable" : true,
         "price" : 1900,
         "detail" : {
-            "description" : "달콤한 스위트콘에 신선한 야채가 어우러진 콘샐러드! 치킨 버거와 곁들여 먹기 좋습니다.",
+            "description" : "달콤한 스위트콘에 신선한 야채가 어우러진 콘샐러드!\n치킨 버거와 곁들여 먹기 좋습니다.",
             "image" : "/images/sidemenu/콘샐러드.png"
         }
     },

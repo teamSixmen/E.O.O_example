@@ -170,7 +170,7 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                         </div>
                     </div>
                     <div className={style.Descript}>
-                        <p>{product.detail.description}</p>
+                        <pre>{product.detail.description}</pre>
                     </div>
                     <div className={style.Add}>
                         <Set

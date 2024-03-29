@@ -6,7 +6,7 @@
      "isOrderable" : true,
      "price" : 5800,
      "detail" : {
-         "description" : "풍미 가득 순쇠고기 패티와 진한 골드맥앤치즈, 매콤한 치폴레소스까지!",
+         "description" : "풍미 가득 순쇠고기 패티와 진한 골드맥앤치즈,\n매콤한 치폴레소스까지!",
          "image" : "/images/burgermenu/골드맥앤치즈치킨버거.png"
      }
  
@@ -18,7 +18,7 @@
      "isOrderable" : true,
      "price" : 5100,
      "detail" : {
-         "description" : "화끈한 불맛이 살아있는 버거,싸이버거의 매운맛 버전!!",
+         "description" : "화끈한 불맛이 살아있는 버거,\n싸이버거의 매운맛 버전!!",
          "image" : "/images/burgermenu/불싸이버거.png"
      }
      },
@@ -29,7 +29,7 @@
      "isOrderable" : true,
      "price" : 5100,
      "detail" : {
-         "description" : "육즙 풍부한 패티와 달콤한 스테이크소스의 조화! 두툼한 육즙 가득 비프패티와 여러가지 토핑 스테이크소스의 환상적인 만남!",
+         "description" : "육즙 풍부한 패티와 달콤한 스테이크소스의 조화!\n두툼한 육즙 가득 비프패티와 여러가지 토핑 스테이크소스의 환상적인 만남!",
          "image" : "/images/burgermenu/비프스테이크버거.png"
      }
      },
@@ -40,7 +40,7 @@
      "isOrderable" : true,
      "price" : 5400,
      "detail" : {
-         "description" : "BEST 통새우버거와 싸이버거의 결합! 타르타르소스까지 더한 새로운 입찢버거로 FLEX!",
+         "description" : "BEST 통새우버거와 싸이버거의 결합!\n타르타르소스까지 더한 새로운 입찢버거로 FLEX!",
          "image" : "/images/burgermenu/쉬림프싸이플렉스버거.png"
      }
      },
@@ -51,7 +51,7 @@
      "isOrderable" : true,
      "price" : 5000,
      "detail" : {
-         "description" : "바삭하고 매콤한 치킨 패티와 신선한 양상추가 조화를 이루는 효정's터치 시그니처 버거.",
+         "description" : "바삭하고 매콤한 치킨 패티와 신선한 양상추가 조화를 이루는\n효정's터치 시그니처 버거.",
          "image" : "/images/burgermenu/싸이버거.png"
      }
      },
@@ -62,7 +62,7 @@
      "isOrderable" : true,
      "price" : 5600,
      "detail" : {
-         "description" : "고소한 통모짜렐라 치즈패티 & 부드러운 통닭다리살 & 매콤한 아라비아따소스가 선보이는 환상적인 조화!풍성한 속재료와 풍미 가득한 토마토 칠리소스가 만든 중독적인 맛을 느낄 수 있는 버거!! ",
+         "description" : "고소한 통모짜렐라 치즈패티 & 부드러운 통닭다리살 \n& 매콤한 아라비아따소스가 선보이는 환상적인 조화!\n풍성한 속재료와 풍미 가득한 토마토 칠리소스가 만든\n중독적인 맛을 느낄 수 있는 버거!! ",
          
          "image" : "/images/burgermenu/아라비아따치즈버거.png"
      }
@@ -85,7 +85,7 @@
       "isOrderable" : true,
       "price" : 5800,
       "detail" : {
-          "description" : "두툼한 닭다리살, 통베이컨, 바베큐소스, 딥치즈소스, 딜피클(오이)소스로 완성한 풍미 가득 치킨버거. 묵직한 인기로 컴백!",
+          "description" : "두툼한 닭다리살, 통베이컨, 바베큐소스, 딥치즈소스, 딜피클(오이)소스로\n완성한 풍미 가득 치킨버거. 묵직한 인기로 컴백!",
           "image" : "/images/burgermenu/텍사스바베큐치킨버거.png"
       }
       },
@@ -96,7 +96,7 @@
       "isOrderable" : true,
       "price" : 5100,
       "detail" : {
-          "description" : "고소하고 탱글한 통새우 패티에 신선한 양상추가 조화로운 버거.",
+          "description" : "고소하고 탱글한 통새우 패티에 신선한 양상추가 조화로운 버거!",
           "image" : "/images/burgermenu/통새우버거.png"
       }
       },
@@ -107,7 +107,7 @@
       "isOrderable" : true,
       "price" : 5900,
       "detail" : {
-          "description" : "바삭한 통다리살 패티와 매콤한 할라피뇨 소스가 어우러져 뒷맛까지 깔끔한 버거.",
+          "description" : "바삭한 통다리살 패티와\n매콤한 할라피뇨 소스가 어우러져 뒷맛까지 깔끔한 버거!",
           "image" : "/images/burgermenu/할라피뇨통살버거.png"
       }
       }
