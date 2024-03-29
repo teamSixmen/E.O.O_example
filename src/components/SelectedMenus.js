@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import { useNavigate, useLocation } from "react-router-dom";
+
 import Selected from "./Selected";
 import SelectedMenusButton from "./SelectedMenusButton";
 
@@ -9,6 +11,9 @@ function SelectedMenus({ selectedItems, setSelectedItems }) {
 
     const [change, setChange] = useState(false);
     const [isDisplay, setIsDisplay] = useState(false);
+
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const selectedMenusButtonStyle = {
         visibility: selectedItems.length < 4? 'hidden':'visible',
@@ -37,6 +42,11 @@ function SelectedMenus({ selectedItems, setSelectedItems }) {
     const onClickHandler = () => {
         alert("모든 메뉴 선택이 취소됩니다.")
         setSelectedItems([])
+        if (location.pathname.match("menu")) {
+            navigate(location.pathname);
+        } else {
+            navigate("/menu/burgermenu");
+        }
     }
 
     return (
