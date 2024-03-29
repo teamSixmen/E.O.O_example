@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 
 import Set from "./Set";
+import Advertise from "./Advertise";
 
 import { getSideMenus } from "../api/MenuAPI";
 import { getDrinkMenus } from "../api/MenuAPI";
 
+import { getPosition } from "../api/PositionAPI";
+
 import style from "./Modal.module.css";
 
-function Modal({ product, selectedItems, setSelectedItems, change, setChange, modalOpen, setModalOpen, modalBackground}) {
+function Modal({ product, selectedItems, setSelectedItems, change, setChange, modalOpen, setModalOpen, modalBackground, position, setPosition }) {
 
     const [count, setCount] = useState(1);
     const [isSet, setIsSet] = useState(false);
@@ -16,6 +19,8 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
 
     const [sideMenus, setSideMenus] = useState([]);
     const [drinkMenus, setDrinkMenus] = useState([]);
+
+    const [recommend, setRecommend] = useState({});
 
     const sideIndex = sideMenus.findIndex(function(selected){return selected.menuCode === addSide});
     const drinkIndex = drinkMenus.findIndex(function(selected){return selected.menuCode === addDrink});
@@ -44,34 +49,78 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
             isSet?
             selectedItems.findIndex(function(selected){return selected.menuCode === product.menuCode * 100 + ((addSide - 401) * 10) + (addDrink - 501)}):
             selectedItems.findIndex(function(selected){return selected.menuCode === product.menuCode});
-
+        
         if (index !== -1) {
-            let copiedItems = selectedItems;
-            copiedItems[index].quantity += count;
-            setSelectedItems(copiedItems);
-            setChange(!change);
+            // let copiedItems = selectedItems;
+            // copiedItems[index].quantity += count;
+            // setSelectedItems(copiedItems);
+            // setChange(!change);
+            if (recommend.menuCode) {
+                const recomIndex = selectedItems.findIndex(function(selected){return selected.menuCode === recommend.menuCode});
+                if (recomIndex !== -1) {
+                    let copiedItems = selectedItems;
+                    copiedItems[index].quantity += count;
+                    copiedItems[recomIndex].quantity += 1;
+                    setSelectedItems(copiedItems);
+                    setChange(!change);
+                } else {
+                    let copiedItems = selectedItems;
+                    copiedItems[index].quantity += count;
+                    const changedItems = [...copiedItems, recommend];
+                    setSelectedItems(changedItems);
+                    setChange(!change);
+                }
+            } else {
+                let copiedItems = selectedItems;
+                copiedItems[index].quantity += count;
+                setSelectedItems(copiedItems);
+                setChange(!change);
+            }
         } else {
             if (selectedItems.length < 6) {
                 if (!isSet) {
-                const changedItems = [...selectedItems, 
-                    {"menuCode": product.menuCode, 
-                     "menuName": product.menuName, 
-                     "price": product.price,
-                     "image":product.detail.image,
-                     "quantity": count}];
-
-                     setSelectedItems(changedItems);
-                     setChange(!change);
-                    } else if (isSet) {
-                        const changedItems = [...selectedItems,
-                            {"menuCode": product.menuCode * 100 + ((addSide - 401) * 10) + (addDrink - 501),
-                            "menuName": product.menuName.concat("\n세트(", (addSide - 401), (addDrink - 501),")"),
-                            "price": product.price + sideMenus[sideIndex].price + drinkMenus[drinkIndex].price - 500,
-                            "image":product.detail.image,
-
-                    "quantity": count}];
-                setSelectedItems(changedItems);
-                setChange(!change);
+                    if (recommend.menuCode) {
+                        const recomIndex = selectedItems.findIndex(function(selected){return selected.menuCode === recommend.menuCode});
+                        if (recomIndex !== -1) {
+                            let copiedItems = selectedItems;
+                            copiedItems[recomIndex].quantity += 1;
+                            const changedItems = [...copiedItems, 
+                                {"menuCode": product.menuCode, 
+                                 "menuName": product.menuName, 
+                                 "price": product.price,
+                                 "image":product.detail.image,
+                                 "quantity": count}];
+                            setSelectedItems(changedItems);
+                            setChange(!change);
+                        } else {
+                            const changedItems = [...selectedItems, 
+                                {"menuCode": product.menuCode, 
+                                 "menuName": product.menuName, 
+                                 "price": product.price,
+                                 "image":product.detail.image,
+                                 "quantity": count}, recommend];
+                            setSelectedItems(changedItems);
+                            setChange(!change);
+                        }
+                    } else {
+                        const changedItems = [...selectedItems, 
+                            {"menuCode": product.menuCode, 
+                             "menuName": product.menuName, 
+                             "price": product.price,
+                             "image":product.detail.image,
+                             "quantity": count}];
+                        setSelectedItems(changedItems);
+                        setChange(!change);
+                    }
+                } else if (isSet) {
+                    const changedItems = [...selectedItems,
+                        {"menuCode": product.menuCode * 100 + ((addSide - 401) * 10) + (addDrink - 501),
+                        "menuName": product.menuName.concat("\n세트(", (addSide - 401), (addDrink - 501),")"),
+                        "price": product.price + sideMenus[sideIndex].price + drinkMenus[drinkIndex].price - 500,
+                        "image":product.detail.image,
+                        "quantity": count}];
+                    setSelectedItems(changedItems);
+                    setChange(!change);
                 }
             } else {
                 alert("장바구니가 가득 찼습니다.");
@@ -133,6 +182,16 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                             setAddSide={setAddSide}
                             addDrink={addDrink}
                             setAddDrink={setAddDrink}
+                        />
+                    </div>
+                    <div className={style.AdBox}>
+                        <Advertise
+                            key={product.menuCode}
+                            menu={product}
+                            isSet={isSet}
+                            position={position}
+                            recommend={recommend}
+                            setRecommend={setRecommend}
                         />
                     </div>
                     <div className={style.ButtonBox}>
