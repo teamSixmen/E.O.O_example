@@ -49,16 +49,16 @@ function Weather(){
                     { weather.main === 'Drizzle' && <label>약한 비</label> }
                     { weather.main === 'Thunderstorm' && <label>뇌우</label> }
                     { weather.main === 'Snow' && <label>눈</label> }
-                    {(weather.id === '701' ||
-                      weather.id === '711' ||
-                      weather.id === '721' ||
-                      weather.id === '731' ||
-                      weather.id === '741' ||
-                      weather.id === '751' ||
-                      weather.id === '761' ||
-                      weather.id === '762' ||
-                      weather.id === '771' ||
-                      weather.id === '781')&& <label>안개</label> }
+                    {(weather.id === 701 ||
+                      weather.id === 711 ||
+                      weather.id === 721 ||
+                      weather.id === 731 ||
+                      weather.id === 741 ||
+                      weather.id === 751 ||
+                      weather.id === 761 ||
+                      weather.id === 762 ||
+                      weather.id === 771 ||
+                      weather.id === 781)&& <label>안개</label> }
                 </div>
                 <div className={weatherStyle.온도}>
                     <img src="/images/온도계.png" />
