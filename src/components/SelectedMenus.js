@@ -40,7 +40,9 @@ function SelectedMenus({ selectedItems, setSelectedItems }) {
     );
 
     const onClickHandler = () => {
-        alert("모든 메뉴 선택이 취소됩니다.")
+        if(selectedItems.length !== 0) {
+            alert("모든 메뉴 선택이 취소됩니다.");
+        }
         setSelectedItems([])
         if (location.pathname.match("menu")) {
             navigate(location.pathname);
