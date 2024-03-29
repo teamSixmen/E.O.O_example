@@ -54,11 +54,11 @@ function Weather(){
                       weather.id === 721 ||
                       weather.id === 731 ||
                       weather.id === 741 ||
-                      weather.id === 751 ||
                       weather.id === 761 ||
                       weather.id === 762 ||
                       weather.id === 771 ||
                       weather.id === 781)&& <label>안개</label> }
+                    { weather.id === 751 && <label>미세먼지</label>}
                 </div>
                 <div className={weatherStyle.온도}>
                     <img src="/images/온도계.png" />
