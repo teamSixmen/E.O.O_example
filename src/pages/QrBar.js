@@ -14,7 +14,7 @@ function QrBar() {
         () => {
             const timer = setInterval(() => {
                 navigate("/receipt");
-            }, 1000000);
+            }, 10000);
 
             return () => {
                 clearInterval(timer);
