@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
 import style from "./SelectPayment.module.css";
 
-function SelectPayment() {
+function SelectPayment({ selectedItems, change }) {
     
     const [checked, setChecked] = useState("card");
     
@@ -15,6 +15,14 @@ function SelectPayment() {
         (checked === "card")? navigate("/pay/card"):navigate("/pay/appcard")
         setChecked("card");
     };
+
+    let totalPrice = 0;
+
+    selectedItems.map(
+        item => {
+            totalPrice += (item.price * item.quantity);
+        }
+    );
     
     const direction = (checked === "app")? "/images/vector05.png":"/images/vector04.png";
 
@@ -23,7 +31,7 @@ function SelectPayment() {
             <div className={style.PaymentBox}>
                 <div className={style.BlankBox}></div>
                     <div className={style.결제수단}>
-                        <p>결제 수단</p>
+                        <p>결제 수단을 선택해주세요&nbsp;:&nbsp;<span>{totalPrice? `${parseInt(totalPrice / 1000)},`:"" }{totalPrice? ((totalPrice % 1000)? totalPrice % 1000: "000"): "0"}원</span></p>
                     </div>
                     <div className={style.TopBox}>
                         <label className={style.label}

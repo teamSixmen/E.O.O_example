@@ -29,7 +29,7 @@
 }
 
 .결제수단 p{
-    background: rgba(58, 1, 0, 1);
+    background: rgba(58, 1, 0, 0.7);
     color: white;
     border-radius: 30px;
     width : 500px;
@@ -37,8 +37,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 22px;
+    /* font-weight: bold; */
+}
+
+.결제수단 span {
+    color: rgba(255, 184, 0, 1);
     font-weight: bold;
+    font-size: 25px;
 }
 
 .label {
