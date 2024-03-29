@@ -43,6 +43,11 @@ function Selected({item, selectedItems, setSelectedItems, change, setChange }) {
         const removedItems = copiedItems.filter(product => product.menuCode !== item.menuCode);
         setSelectedItems(removedItems);
         alert("선택이 취소됩니다.");
+        if (location.pathname.match("menu")) {
+            navigate(location.pathname);
+        } else {
+            (selectedItems.length === 1)? navigate("/menu/burgermenu"):navigate("/order");
+        }
     }
 
     return (
