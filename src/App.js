@@ -43,6 +43,8 @@ function App() {
                 setHere={setHere}
                 selectedItems={selectedItems}
                 setSelectedItems={setSelectedItems}
+                change={change}
+                setChange={setChange}
               />}>
                 <Route index element={<BurgerMenus
                   selectedItems={selectedItems}
@@ -86,6 +88,8 @@ function App() {
                 setHere={setHere}
                 selectedItems={selectedItems}
                 setSelectedItems={setSelectedItems}
+                change={change}
+                setChange={setChange}
               />}>
                 <Route index element={<OrderLayout
                   here={here}

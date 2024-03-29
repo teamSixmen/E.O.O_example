@@ -7,9 +7,9 @@ import SelectedMenusButton from "./SelectedMenusButton";
 
 import style from "./SelectedMenus.module.css";
 
-function SelectedMenus({ selectedItems, setSelectedItems }) {
+function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
 
-    const [change, setChange] = useState(false);
+    // const [change, setChange] = useState(false);
     const [isDisplay, setIsDisplay] = useState(false);
 
     const navigate = useNavigate();
