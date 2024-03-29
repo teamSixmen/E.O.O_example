@@ -13,7 +13,6 @@ import SetMenus from "./pages/SetMenus";
 import SideMenus from "./pages/SideMenus";
 import DrinkMenus from "./pages/DrinkMenus";
 import Card from "./pages/Card";
-import AppCard from "./pages/AppCard";
 import Receipt from "./pages/Receipt";
 import Help from "./pages/Help";
 import SelectAppCard from "./components/SelectAppCard";
@@ -102,7 +101,7 @@ function App() {
                 <Route index element={<Card/>}/>
                 <Route path="card" element={<Card/>}/>
                 <Route path="appcard" element={<SelectAppCard/>}/>
-                <Route path="qrBar" element={<AppCard/>}/>
+                <Route path="qrBar" element={<QrBar/>}/>
               </Route>
               <Route path="receipt" element={<StandardLayout
                 here={here}

@@ -1,15 +1,64 @@
-.Qr {
-    background-color: rgba(241, 241, 241, 1);
+.배경{
     width: 768px;
     height: 810px;
-    text-align: center;
-}
-.바코드 {
-    width: 200px;
-    height:250px;
+    display:flex;
+    background: rgba(241, 241, 241, 1);
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
-.QR코드 {
-    width:200px;
-    height:250px;
+.옐로바 {
+    width: 768px;
+    height: 60px;
+    background-color: #3A0100;
+    color: white;
+    font-size: 160%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.정렬 {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+.Qr,  .BarCord{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Qr img{
+    width: 212px;
+    height: 283px;
+    border-radius: 20px;
+}
+
+.Qr p, .BarCord p {
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.BarCord img{
+    width: 358px;
+    height: 283px;
+    border-radius: 20px;
+}
+
+.텍스트 {
+    height: 160px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.텍스트 h1 {
+    margin-top: 0;
+}
+
