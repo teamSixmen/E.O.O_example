@@ -1,4 +1,7 @@
-import { useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
+
+import { getPosition } from "../api/PositionAPI";
+import { getWeather } from "../api/WeatherAPI";
 
 import Modal from "./Modal";
 
@@ -8,6 +11,19 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change, setChange })
 
     const [modalOpen, setModalOpen] = useState(false);
     const modalBackground = useRef();
+    const [position, setPosition] = useState({});
+
+    const getPos = async () => {
+        const pos = await getPosition();
+        setPosition(pos);
+    };
+
+    useEffect(
+        () => {
+            getPos();
+        },
+        []
+    )
 
     return (
         <>  
@@ -28,6 +44,8 @@ function MenuBlock({ item, selectedItems, setSelectedItems, change, setChange })
                 modalOpen={modalOpen}
                 setModalOpen={setModalOpen}
                 modalBackground={modalBackground}
+                position={position}
+                setPosition={setPosition}
             />
         </>
     );
