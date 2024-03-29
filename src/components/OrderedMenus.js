@@ -11,7 +11,7 @@ function OrderedMenus({item}) {
                 <p className={style.ReceiptTextSum}>{parseInt(item.price * item.quantity / 1000)},{(item.price * item.quantity % 1000)? item.price * item.quantity % 1000:"000"}</p>
                 <p className={style.ReceiptTextBlank}> </p>
             </div>
-                <hr className={style.hrstyle}/>
+            <hr className={style.hrstyle}/>
         </>
     );
 }

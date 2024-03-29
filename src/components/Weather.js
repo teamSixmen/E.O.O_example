@@ -44,7 +44,7 @@ function Weather(){
                 <div className={weatherStyle.날씨}>
                     <img src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}/>
                     { weather.main === 'Clear' && <label>맑음</label> }
-                    { weather.main === 'Clouds' && <><label>구름</label></> }
+                    { weather.main === 'Clouds' && <><label>흐림</label></> }
                     { weather.main === 'Rain' && <><label>비</label></> }
                     { weather.main === 'Drizzle' && <label>약한 비</label> }
                     { weather.main === 'Thunderstorm' && <label>뇌우</label> }
