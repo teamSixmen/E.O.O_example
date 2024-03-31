@@ -1,4 +1,4 @@
-## React-Project-Kiosk
+## React-Project-EveryOne Order Kiosk
 React(+Router)를 활용한 무인 주문 프로그램
 
 ## 🖥️ 프로젝트 소개
