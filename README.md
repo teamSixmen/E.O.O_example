@@ -7,6 +7,7 @@ Mom's Touch Kiosk를 모티프로 삼아 제작되었으며, 기존 버전보다
 
 ## 🕰️ 개발 기간
 * 24.03.07일 - 24.04.01일
+* [WBS 보기](https://www.notion.so/ohgiraffers/WBS-79edee8f423f458197f1f112ca6313a7?pvs=4)
 
 ### 🧑‍🤝‍🧑 멤버구성
  - 팀장  : 임찬울 - 메뉴 주문 페이지(선택한 메뉴 Pagination 기능/ 현재 날씨 정보 제공), Layout CSS, 통합 및 형상관리
