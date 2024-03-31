@@ -5,6 +5,12 @@ React(+Router)를 활용한 무인 주문 프로그램
 Mom's Touch Kiosk를 모티프로 삼아 제작되었으며, 기존 버전보다 더욱 향상된 기능의 키오스크
 <br>
 
+## 📝 시장 조사 및 업무 분석
+* [내용 보기](https://www.notion.so/ohgiraffers/b13963e63af14289af83d73c15cfb8cf?pvs=4)
+
+## 🙋‍♂ 요구 사항 명세
+* [요구사항명세서](https://www.notion.so/ohgiraffers/9feda0669cb740f4ba515c335215171e?pvs=4)
+
 ## 🕰️ 개발 기간
 * 24.03.07일 - 24.04.01일
 * [WBS 보기](https://www.notion.so/ohgiraffers/WBS-79edee8f423f458197f1f112ca6313a7?pvs=4)
@@ -21,16 +27,16 @@ Mom's Touch Kiosk를 모티프로 삼아 제작되었으며, 기존 버전보다
 - `Html5` `CSS3`
 - **IDE** : Visual Studio Code version 1.87
 
-## 📌 주요 기능
-#### 메인 페이지
-- 메인 포스터(홍보 상품 등)
-#### 매장/포장 선택
-- 최초 화면에서 선택한 후 메뉴 선택 도중 변경 가능
+## 🔍 주요 기능
 #### 상품 구매
 - 상품 선택
 - 상품별 선택취소/ 전체취소 등 사용자를 위한 편의 기능
 - 결제 페이지
 - 결제 완료(+결제내역)
+#### 메인 페이지
+- 메인 포스터(홍보 상품 등)
+#### 매장/포장 선택
+- 최초 화면에서 선택한 후 메뉴 선택 도중 변경 가능
 #### 날씨 정보 제공
 - Openweathermap API 연동
 - 날씨에 맞는 음료 추천 기능
