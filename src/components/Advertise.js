@@ -29,7 +29,7 @@ function Advertise ({ menu, isSet, position, recommend, setRecommend }) {
 
     return (
         <>
-            {(menu.menuCode > 300 || !isSet) && (menu.menuCode !== 506) && (condition === "Rain") &&
+            {(menu.menuCode > 300 || !isSet) && (menu.menuCode < 500) && (condition === "Rain") &&
                 <div className={style.OuterBox}>
                     <div className={style.WeatherBox}>
                         현재 날씨: 비<br/>
@@ -45,7 +45,7 @@ function Advertise ({ menu, isSet, position, recommend, setRecommend }) {
                     </div>
                 </div>
             }
-            {(menu.menuCode > 300 || !isSet) && (menu.menuCode !== 506) && (condition === "Mist") &&
+            {(menu.menuCode > 300 || !isSet) && (menu.menuCode < 500) && (condition === "Mist") &&
                 <div className={style.OuterBox}>
                     <div className={style.WeatherBox}>
                         현재 날씨: 안개<br/>
@@ -61,7 +61,7 @@ function Advertise ({ menu, isSet, position, recommend, setRecommend }) {
                     </div>
                 </div>
             }
-            {(menu.menuCode > 300 || !isSet) && (menu.menuCode !== 506) && (condition === "Clouds") &&
+            {(menu.menuCode > 300 || !isSet) && (menu.menuCode < 500) && (condition === "Clouds") &&
                 <div className={style.OuterBox}>
                     <div className={style.WeatherBox}>
                         현재 날씨: 흐림<br/>
@@ -77,7 +77,7 @@ function Advertise ({ menu, isSet, position, recommend, setRecommend }) {
                     </div>
                 </div>
             }
-            {(menu.menuCode > 300 || !isSet) && (menu.menuCode !== 510) && (condition === "Sand") &&
+            {(menu.menuCode > 300 || !isSet) && (menu.menuCode < 500) && (condition === "Sand") &&
                 <div className={style.OuterBox}>
                     <div className={style.WeatherBox}>
                         현재 날씨: 미세먼지<br/>
@@ -93,7 +93,7 @@ function Advertise ({ menu, isSet, position, recommend, setRecommend }) {
                     </div>
                 </div>
             }
-            {(menu.menuCode > 300 || !isSet) && (menu.menuCode !== 509) && (condition === "Clear") &&
+            {(menu.menuCode > 300 || !isSet) && (menu.menuCode < 500) && (condition === "Clear") &&
                 <div className={style.OuterBox}>
                     <div className={style.WeatherBox}>
                         현재 날씨: 맑음<br/>

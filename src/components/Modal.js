@@ -64,11 +64,15 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                     setSelectedItems(copiedItems);
                     setChange(!change);
                 } else {
-                    let copiedItems = selectedItems;
-                    copiedItems[index].quantity += count;
-                    const changedItems = [...copiedItems, recommend];
-                    setSelectedItems(changedItems);
-                    setChange(!change);
+                    if (selectedItems.length < 6) {
+                        let copiedItems = selectedItems;
+                        copiedItems[index].quantity += count;
+                        const changedItems = [...copiedItems, recommend];
+                        setSelectedItems(changedItems);
+                        setChange(!change);
+                    } else {
+                        alert("장바구니가 가득 찼습니다.");
+                    }
                 }
             } else {
                 let copiedItems = selectedItems;
@@ -93,14 +97,18 @@ function Modal({ product, selectedItems, setSelectedItems, change, setChange, mo
                             setSelectedItems(changedItems);
                             setChange(!change);
                         } else {
-                            const changedItems = [...selectedItems, 
-                                {"menuCode": product.menuCode, 
-                                 "menuName": product.menuName, 
-                                 "price": product.price,
-                                 "image":product.detail.image,
-                                 "quantity": count}, recommend];
-                            setSelectedItems(changedItems);
-                            setChange(!change);
+                            if (selectedItems.length < 5) {
+                                const changedItems = [...selectedItems, 
+                                    {"menuCode": product.menuCode, 
+                                     "menuName": product.menuName, 
+                                     "price": product.price,
+                                     "image":product.detail.image,
+                                     "quantity": count}, recommend];
+                                setSelectedItems(changedItems);
+                                setChange(!change);
+                            } else {
+                                alert("장바구니 한도를 초과하는 주문입니다.");
+                            }
                         }
                     } else {
                         const changedItems = [...selectedItems, 
