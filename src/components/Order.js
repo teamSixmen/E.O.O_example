@@ -1,3 +1,4 @@
+import Weather from "./Weather";
 import { useNavigate } from "react-router-dom";
 
 import style from "./Order.module.css";
@@ -8,13 +9,17 @@ function Order({ selectedItems }) {
     
     const onClickHander = () => {
     
-        (selectedItems.length)? navigate("/order"):alert("shoping list is empty");
+        (selectedItems.length)? navigate("/order"):alert("선택된 메뉴가 없습니다.");
     }
 
     return (
         <>
             <div className={style.Box}>
-                <div className={style.Blank}></div>
+                <div className={style.Blank}>
+                    <div className={style.WeatherBox}>
+                        <Weather/>
+                    </div>
+                </div>
                 <div
                     onClick={onClickHander}
                     className={style.Button}

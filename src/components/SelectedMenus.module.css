@@ -6,20 +6,65 @@
 
 .TopBox {
     width: 768px;
-    height: 35px;
+    height: 32px;
     background-color: rgba(58, 1, 0, 1);
+    color: white;
+    font-size: 110%;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Selected {
     width: 768px;
-    height: 210px;
+    height: 230px;
     justify-content: center;
 }
 
 .Display {
-    width: 670px;
+    width: 650px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 85px;
+    display: inline-block;
+}
+
+.DisplayButton{
+    text-align: center;
     margin-top: 5px;
-    margin-left: 45px;
+}
+
+.SelectedButton {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: gray;
+    display: inline-block;
+    margin-right: 2px;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+.SelectedButton2 {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: white;
+    display: inline-block;
+    margin-right: 2px;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+.LeftButton {
+    position: absolute;
+    top: 280px;
+    margin-left: 20px;
+}
+
+.RightButton{
+    position: absolute;
+    top: 280px;
+    display: inline-block;
 }
 
 .BottomBox {
@@ -32,13 +77,29 @@
     line-height: 5px;
 }
 
+.CancelButton {
+    width: 90px;
+    height: 30px;
+    background-color: rgb(253, 25, 25);
+    border-radius: 5px;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 7px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
 .FrontText {
     display: inline-block;
     position: absolute;
-    left: 570px;
+    right: 170px
 }
 
 .NextText {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 30px;
 }

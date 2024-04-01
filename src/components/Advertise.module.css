@@ -1,0 +1,27 @@
+.OuterBox {
+    width: 305px;
+    margin: auto;
+    margin-top: -5px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.WeatherBox {
+    width: 160px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.RecomBox {
+    width: 120px;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.흐림 {
+    border-radius: 50%;
+    background-color: rgba(117, 117, 117, 0.9);
+}

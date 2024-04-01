@@ -1,8 +1,51 @@
+/* .allBox {
+    width: 768px;
+    height: 548px;
+    display: flex;
+} */
+
 .Box {
-    width: 665px;
-    height: 475px;
-    position: absolute;
-    top: 439px;
-    left: 103px;
+    width: 625px;
+    height: 476px;
+    /* position: absolute; */
+    /* top: 439px; */
+    /* left: 103px; */
     background-color: rgba(243, 236, 236, 1);
+    margin-top: -485px;
+    margin-left: 80px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
 }
+
+.pagenation {
+    width: 654px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pagebutton {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttonActive {
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 1px double #ccc;
+    background-color: #ffb800;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+

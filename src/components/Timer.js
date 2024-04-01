@@ -1,39 +1,36 @@
 import { useEffect, useState } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 function Timer() {
     
-    // const [time, setTime] = useState(30);
+    const navigate = useNavigate();
 
-    let time = 30;
+    const [sec, setSec] = useState(60);
 
-    const timer = 
     useEffect(
         () => {
-            setInterval(
-                () => {
-                    time = time - 1;
-                    console.log(time);
-                }, 1000
-            );
+            const timer =
+                setInterval(
+                    () => {
+                        setSec((prev) => prev - 1);
 
-            return(
-                () => {
-                    if (time < 0) {
-                        clearInterval(timer);
-                    }
+                        if (sec < 1) {
+                            navigate("/");
+                        }
+                    }, 1000
+                );
+
+                return () => {
+                    clearInterval(timer);
                 }
-            );
         },
-        []
+        [sec]
     );
-
-    if (time < 0) {
-        clearInterval(timer);
-    }
 
     return (
         <>
-            <h3>time?</h3>
+            <h3>{sec}초 후 처음으로 이동합니다.</h3>
         </>
     );
 }

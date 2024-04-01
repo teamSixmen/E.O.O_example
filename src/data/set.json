@@ -6,8 +6,8 @@
         "isOrderable" : true,
         "price" : 32000,
         "detail" : {
-            "description" : "후라이드싸이순살1, 싸이버거4, 케이준양념감자2, 콜라4로 구성된 풍성한 효정's패밀리세트",
-            "image" : "맘스패밀리(4인세트).png"
+            "description" : "후라이드싸이순살1, 싸이버거4, 케이준양념감자2,\n콜라4로 구성된 풍성한 효정's패밀리세트",
+            "image" : "/images/setmenu/맘스패밀리(4인세트).png"
         }
     },
     { 
@@ -17,8 +17,8 @@
         "isOrderable" : true,
         "price" : 26000,
         "detail" : {
-            "description" : "후라이드싸이순살1, 싸이버거3, 케이준양념감자1, 콜라3으로 구성된 풍성한 효정's패밀리세트",
-            "image" : "맘스패밀리(3인세트).png"
+            "description" : "후라이드싸이순살1, 싸이버거3, 케이준양념감자1,\n콜라3으로 구성된 풍성한 효정's패밀리세트",
+            "image" : "/images/setmenu/맘스패밀리(3인세트).png"
         }
     },
     { 
@@ -28,8 +28,8 @@
         "isOrderable" : true,
         "price" : 15000,
         "detail" : {
-            "description" : "케이준떡강정(S)1 싸이버거1 콜라1 구성된 풍성한 효정's세트",
-            "image" : "싱글떡강정세트.png"
+            "description" : "케이준떡강정(S)1, 싸이버거1, 콜라1 구성된 풍성한 효정's세트",
+            "image" : "/images/setmenu/싱글떡강정세트.png"
         }
     },
     { 
@@ -39,8 +39,8 @@
         "isOrderable" : true,
         "price" : 16000,
         "detail" : {
-            "description" : "케이준떡강정(S)1 비프스테이크버거1 콜라1 구성된 풍성한 효정's세트",
-            "image" : "싱글비프스테이크떡강정세트.png"
+            "description" : "케이준떡강정(S)1, 비프스테이크버거1, 콜라1 구성된 풍성한 효정's세트",
+            "image" : "/images/setmenu/싱글비프스테이크떡강정세트.png"
         }
     },
     { 
@@ -50,8 +50,8 @@
         "isOrderable" : true,
         "price" : 24900,
         "detail" : {
-            "description" : "후라이드싸이순살1 싸이버거1 콜라1로 구성된 풍성한 효정's세트",
-            "image" : "싱글순살세트.png"
+            "description" : "후라이드싸이순살1, 싸이버거1, 콜라1 구성된 풍성한 효정's세트",
+            "image" : "/images/setmenu/싱글순살세트.png"
         }
     },
     { 
@@ -61,8 +61,52 @@
         "isOrderable" : true,
         "price" : 25900,
         "detail" : {
-            "description" : "후라이드치킨반마리싸이버거1콜라1로 구성된 풍성한 효정's세트",
-            "image" : "싱글치킨세트.png"
+            "description" : "후라이드치킨반마리, 싸이버거1, 콜라1 구성된 풍성한 효정's세트",
+            "image" : "/images/setmenu/싱글치킨세트.png"
+        }
+    },
+    { 
+        "menuCode" : 307,
+        "menuName" : "싱글통다리세트",
+        "categoryName" : "setmenu",
+        "isOrderable" : true,
+        "price" : 9900,
+        "detail" : {
+            "description" : "후라이드통다리1, 싸이버거1, 콜라1 구성된 풍성한 효정's세트",
+            "image" : "/images/setmenu/싱글통다리세트.png"
+        }
+    },
+    { 
+        "menuCode" : 308,
+        "menuName" : "커플떡강정세트",
+        "categoryName" : "setmenu",
+        "isOrderable" : true,
+        "price" : 14900,
+        "detail" : {
+            "description" : "케이준떡강정(S)2, 싸이버거2, 케이준감자(S), 콜라2 구성된 풍성한 효정's세트",
+            "image" : "/images/setmenu/커플떡강정세트.png"
+        }
+    },
+    { 
+        "menuCode" : 309,
+        "menuName" : "커플비프스테이크순살세트",
+        "categoryName" : "setmenu",
+        "isOrderable" : true,
+        "price" : 31000,
+        "detail" : {
+            "description" : "후라이드치킨반마리, 비프스테이크버거2, 케이준감자(S),\n콜라2 구성된 풍성한 효정's세트",
+            "image" : "/images/setmenu/커플비프스테이크순살세트.png"
+        }
+    },
+    { 
+        "menuCode" : 310,
+        "menuName" : "커플순살세트",
+        "categoryName" : "setmenu",
+        "isOrderable" : true,
+        "price" : 32900,
+        "detail" : {
+            "description" : "후라이드싸이순살1, 싸이버거2, 케이준양념감자(중)1,\n콜라2 구성된 풍성한 효정's세트",
+            "image" : "/images/setmenu/커플순살세트.png"
         }
     }
 ]

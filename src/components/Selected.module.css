@@ -3,9 +3,12 @@
     height: 140px;
     display: inline-block;
     text-align: center;
-    margin: 10px;
     font-size: 80%;
-    padding-top: 5px;
+    margin-top: 0px;
+}
+
+.QuantityStyle{
+    font-size: 14px;
 }
 
 .Button {
@@ -16,8 +19,22 @@
     color: white;
     font-weight: bold;
     font-size: 150%;
-    line-height: 12px;
+    line-height: 13px;
     display: inline-block;
+    text-align: center;
     margin: 5px;
+    cursor: pointer;
+}
+
+.Cancel {
+    width: 45px;
+    height: 18px;
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    font-size: 9px;
+    line-height: 18px;
+    margin-top: 0px;
+    margin-left: 77px;
     cursor: pointer;
 }

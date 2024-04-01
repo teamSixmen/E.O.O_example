@@ -1,36 +1,41 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
 import style from "./SelectPayment.module.css";
 
-function SelectPayment() {
+function SelectPayment({ selectedItems, change }) {
     
     const [checked, setChecked] = useState("card");
     
     const navigate = useNavigate();
-
-    const onClickRadio = e => {
-        // console.log(e.target.value);
-        setChecked(e.target.value);
-    };
 
     const onClickHandler = () => {
 
         (checked === "card")? navigate("/pay/card"):navigate("/pay/appcard")
         setChecked("card");
     };
-    
-    const onClickCancel = () => navigate("/menu/burgermenu");
 
+    let totalPrice = 0;
+
+    selectedItems.map(
+        item => {
+            totalPrice += (item.price * item.quantity);
+        }
+    );
+    
     const direction = (checked === "app")? "/images/vector05.png":"/images/vector04.png";
 
     return (
         <>
             <div className={style.PaymentBox}>
-                <div className={style.BlankBox}></div>
+                <div className={style.결제수단}>
+                    <p>결제 수단을 선택해주세요&nbsp;:&nbsp;
+                        <span>{totalPrice? `${parseInt(totalPrice / 1000)},`:"" }{totalPrice? ((totalPrice % 1000)? totalPrice % 1000: "000"): "0"}원</span>
+                    </p>
+                </div>
                 <div className={style.TopBox}>
-                    <label 
+                    <label className={style.label}
                         htmlFor="card"
                     >
                         <div 
@@ -49,7 +54,7 @@ function SelectPayment() {
                                 type="radio"
                                 value="card"
                                 defaultChecked
-                                onClick={onClickRadio}
+                                onClick={e => setChecked(e.target.value)}
                             />
                         </div>
                     </label>
@@ -67,7 +72,7 @@ function SelectPayment() {
                                 name="cardOrApp" 
                                 type="radio"
                                 value="app"
-                                onClick={onClickRadio}
+                                onClick={e => setChecked(e.target.value)}
                             />
                         </div>
                     </label>
@@ -80,10 +85,10 @@ function SelectPayment() {
                         결제하기
                     </div>
                     <div 
-                        onClick={onClickCancel}
+                        onClick={() => navigate("/menu/burgermenu")}
                         className={style.CancelBox}
                     >
-                        취소
+                        더 담기
                     </div>
                 </div>
             </div>
