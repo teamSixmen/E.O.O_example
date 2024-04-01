@@ -83,7 +83,7 @@ function SelectedMenus({ selectedItems, setSelectedItems, change, setChange }) {
             <div className={style.BottomBox}>
                 <div className={style.CancelButton} onClick={onClickHandler}>전체 취소</div>
                 <p className={style.FrontText}>내실 돈 : </p>
-                <p className={style.NextText}>{totalPrice? `${parseInt(totalPrice / 1000)},`:"" }{totalPrice? ((totalPrice % 1000)? totalPrice % 1000: "000"): "0"}원</p>
+                <p className={style.NextText}>{totalPrice? `${parseInt(totalPrice / 1000)},`:"" }{totalPrice? ((totalPrice % 1000)? totalPrice % 1000: "000"): "0"}&nbsp;원</p>
             </div>
         </>
     );

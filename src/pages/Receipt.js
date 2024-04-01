@@ -67,7 +67,7 @@ function Receipt({here, selectedItems, waitingNum, setWaitingNum}) {
                         )}
                     </div>
                     <br/>
-                    <h2>합계 금액 : {parseInt(totalPrice / 1000)},{(totalPrice % 1000)? totalPrice % 1000:"000"}</h2>
+                    <h2>합계 금액 : {parseInt(totalPrice / 1000)},{(totalPrice % 1000)? totalPrice % 1000:"000"}&nbsp;원</h2>
                     <h3>{here? "매장":"포장"}</h3>
                     <h2>대기순번 : {waitingNum} </h2>
                     <Timer/>
