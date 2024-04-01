@@ -1,6 +1,6 @@
 export function getWeather(position) {
 
-    const key = "9695eeef0551ed8a75c314a5fd4a2c7e";
+    const key = "";
     
     return (
         // new Promise((resolve, reject) => {
