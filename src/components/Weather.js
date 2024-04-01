@@ -3,7 +3,7 @@ import weatherStyle from "./Weather.module.css";
 
 function Weather(){
 
-    const API_KEY = 'ffd79babc84386065cd8751e4fbb1c66';
+    const API_KEY = '';
 
     const [position,setPosition] = useState({});
     const [cityName,setCityName] = useState('');
